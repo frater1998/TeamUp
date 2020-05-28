@@ -23,6 +23,7 @@ public class RegistrazioneController {
 
     @GetMapping("/registrati")
     public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model){
+
         return "registrati";
     }
 
@@ -35,9 +36,12 @@ public class RegistrazioneController {
 
 
         //Utente u = userService.findById(utente.getId());
+
+
+
         utente.setEmail(utente.getEmail());
 
-        model.addAttribute("utente", utente);
+        model.addAttribute("email", utente.getEmail());
 
         //SALVATAGGIO MEX E UTENTE
 
@@ -47,9 +51,11 @@ public class RegistrazioneController {
         //mexInviato.setPhone(messageForm.getPhone());
         //exInviato.setUtente(utente);
        // tente.getMexInviati().add(mexInviato);
-        userService.salva(utente);
+        Utente u = userService.salva(utente);
 
-        System.out.println(utente.getEmail());
+
+
+        System.out.println(u.getEmail());
 
         return "index";
    // }
