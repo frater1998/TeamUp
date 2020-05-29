@@ -24,17 +24,19 @@ public class RegistrazioneController {
 
 
     @GetMapping("/registrati")
-    public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model, @DateTimeFormat(pattern = "dd.MM.yyyy") Date date) {
+    public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model) {
 
         return "registrati";
     }
 
     @PostMapping("/registrati")
-    public String post(@ModelAttribute @Valid Utente utente, BindingResult result, Model model)  {
+    public String post(@ModelAttribute  Utente utente, BindingResult result, Model model)  {
 
-        if(result.hasErrors()){
+      /*  if(result.hasErrors()){
             return "registrati";
         }
+
+       */
 
 
         utente.setEmail(utente.getEmail());
@@ -44,22 +46,17 @@ public class RegistrazioneController {
         utente.setDataNascita(utente.getDataNascita());
 
 
+
         model.addAttribute("email", utente.getEmail());
         model.addAttribute("password", utente.getPassword());
         model.addAttribute("nome", utente.getNome());
         model.addAttribute("cognome", utente.getCognome());
-        model.addAttribute("data", utente.getDataNascita());
-
 
 
 
         Utente u = userService.salva(utente);
 
-        System.out.println(u.getNome());
-        System.out.println(u.getCognome());
-        System.out.println(u.getEmail());
-        System.out.println(u.getPassword());
-        System.out.println(u.getDataNascita());
+
 
 
         return "index";
@@ -73,4 +70,6 @@ public class RegistrazioneController {
 
         //return "registrati";
     }
+
+
 }
