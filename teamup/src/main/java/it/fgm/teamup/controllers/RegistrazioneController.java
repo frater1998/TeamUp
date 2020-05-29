@@ -5,6 +5,7 @@ package it.fgm.teamup.controllers;
 import it.fgm.teamup.model.Utente;
 import it.fgm.teamup.services.IUtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
+import java.util.Date;
 
 @Controller
 public class RegistrazioneController {
@@ -22,7 +24,7 @@ public class RegistrazioneController {
 
 
     @GetMapping("/registrati")
-    public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model){
+    public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model, @DateTimeFormat(pattern = "dd.MM.yyyy") Date date) {
 
         return "registrati";
     }
@@ -35,27 +37,30 @@ public class RegistrazioneController {
         }
 
 
-        //Utente u = userService.findById(utente.getId());
-
-
-
         utente.setEmail(utente.getEmail());
+        utente.setPassword(utente.getPassword());
+        utente.setNome(utente.getNome());
+        utente.setCognome(utente.getCognome());
+        utente.setDataNascita(utente.getDataNascita());
+
 
         model.addAttribute("email", utente.getEmail());
+        model.addAttribute("password", utente.getPassword());
+        model.addAttribute("nome", utente.getNome());
+        model.addAttribute("cognome", utente.getCognome());
+        model.addAttribute("data", utente.getDataNascita());
 
-        //SALVATAGGIO MEX E UTENTE
 
-        //Message mexInviato = new Message();
-     //   mexInviato.setTitle(messageForm.getTitle());
-       // mexInviato.setBody(messageForm.getBody());
-        //mexInviato.setPhone(messageForm.getPhone());
-        //exInviato.setUtente(utente);
-       // tente.getMexInviati().add(mexInviato);
+
+
         Utente u = userService.salva(utente);
 
-
-
+        System.out.println(u.getNome());
+        System.out.println(u.getCognome());
         System.out.println(u.getEmail());
+        System.out.println(u.getPassword());
+        System.out.println(u.getDataNascita());
+
 
         return "index";
    // }

@@ -3,18 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrati</title>
-</head>
-<body>
-<form th:action="@{/registrati}" th:object="${utente}" method="post" >
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputEmail4" th:object="${email}">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+
+
+ </head>
+ <body>
+
+
+
+ <form th:action="@{/registrati}" th:object="${utente}" method="post">
+     <div class="field">
+         <label class="label" for="nome">Nome</label>
+         <div class="control">
+             <input class="input" type="text" placeholder="Nome" th:field="*{nome}" id="nome">
+         </div>
+     </div>
+
+     <div class="field">
+         <label class="label" for="cognome">Cognome</label>
+         <div class="control">
+             <input class="input" type="text" placeholder="Cognome" th:field="*{cognome}" id="cognome">
+         </div>
+     </div>
+
+
+
+
+ <div class="it-datepicker-wrapper theme-dark">
+         <label for="date">Data di nascita</label>
+         <div class="form-group">
+             <input  input type="text" id="date" path="dataNascita" placeholder="yyyy-mm-dd" th:field="*{dataNascita}">
+         </div>
+     </div>
+     <!--
+<div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma" th:field="*{username}">
+            <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
         </div>
-        
+        <p class="help is-success">This username is available</p>
+    </div>
+-->
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@" th:field="*{email}">
+            <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+        </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <div class="field">
+        <label for="password" class="label">Password</label>
+        <div class="control has-icons-left has-icons-right">
+            <input id="password" class="input is-danger" type="password" placeholder="Password input" value="password" th:field="*{password}">
+            <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+        </div>
+
+    </div>
+
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+        </div>
+    </div>
 </form>
+
+
 </body>
+
 </html>

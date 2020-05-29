@@ -1,9 +1,8 @@
 package it.fgm.teamup.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -14,6 +13,7 @@ public class Utente {
     private int id;
     private String nome;
     private String cognome;
+
     private Date dataNascita;
     private String email;
     private String password;
