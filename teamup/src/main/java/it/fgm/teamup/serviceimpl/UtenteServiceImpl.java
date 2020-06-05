@@ -18,7 +18,7 @@ public class UtenteServiceImpl  implements IUtenteService {
     @Autowired            //code injection!
     private IUtenteRepository utenteRepository;
 
-    @Override
+    @Override SecurityManagericuy
     @Transactional        //da utilizzare durante le transazioni con il db
     public Utente salva(Utente utente) {
         return utenteRepository.save(utente);
