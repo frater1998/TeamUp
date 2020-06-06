@@ -1,45 +1,67 @@
 package it.fgm.teamup.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.core.userdetails.User;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
-public class Utente {
+@Table
+public class Utente  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
     private String nome;
     private String cognome;
 
-    private Date dataNascita;
+
+    @Column(unique=true, name = "email")
     private String email;
     private String password;
-    private String descrizione;
 
+    private String username;
 
-    public String getDescrizione() {
-        return descrizione;
+    public String getUsername() {
+        return username;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public void setUsername(String username) {
+        this.username = username;
     }
+
+    public List<Partecipazione> getPartecipazione() {
+        return partecipazione;
+    }
+
+    public void setPartecipazione(List<Partecipazione> partecipazione) {
+        this.partecipazione = partecipazione;
+    }
+
+    @OneToMany(mappedBy = "utente", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    List<Partecipazione>partecipazione;
 
 
 
     public Utente(){};
+    public Utente( String email, String password){
 
-    public Utente(String nome, String cognome, int id, Date dataNascita, String email, String password, String descrizione) {
-        this.nome = nome;
-        this.cognome = cognome;
-        this.dataNascita = dataNascita;
         this.email = email;
         this.password = password;
-        this.descrizione = descrizione;
+    };
+
+    public Utente(String nome, String cognome, long id, Date dataNascita, String email,
+                  String password, String username, List<Partecipazione> partecipazione)
+    {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.email = email;
+        this.password = password;
         this.id = id;
+        this.username = username;
+        this.partecipazione = partecipazione;
     }
 
 
@@ -59,13 +81,6 @@ public class Utente {
         this.cognome = cognome;
     }
 
-    public Date getDataNascita() {
-        return dataNascita;
-    }
-
-    public void setDataNascita(Date dataNascita) {
-        this.dataNascita = dataNascita;
-    }
 
     public String getEmail() {
         return email;
@@ -84,11 +99,11 @@ public class Utente {
     }
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 }

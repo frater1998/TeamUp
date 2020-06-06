@@ -1,7 +1,9 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.15.BUILD-SNAPSHOT'
+	id 'org.springframework.boot' version '2.3.1.BUILD-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "2.8"
+
 }
 
 group = 'it.fgm'
@@ -9,9 +11,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
-	developmentOnly
-	runtimeClasspath {
-		extendsFrom developmentOnly
+	compileOnly {
+		extendsFrom annotationProcessor
 	}
 }
 
@@ -22,11 +23,29 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.h2database:h2'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
 
+test {
+	useJUnitPlatform()
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "frater1998_TeamUp"
+		property "sonar.organization", "cicerone"
+		property "sonar.host.url", "https://sonarcloud.io"
+		property "sonar.login", "b92250188a1cc5eccdae5d3d7bcbd6c1a0a8940a"
+	}
 }

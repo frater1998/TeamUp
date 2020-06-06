@@ -1,14 +1,25 @@
 package it.fgm.teamup.model;
 
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
 public class Progetto {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String titolo;
     private String categoria;
     private String descrizione;
 
-    public int getId() { return id; }
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "progetto", cascade = CascadeType.ALL)
+    List<Partecipazione> partecipazione;
 
-    public void setId(int id) { this.id = id; }
+    public long getId() { return id; }
+
+    public void setId(long id) { this.id = id; }
 
     public String getTitolo() { return titolo; }
 
@@ -22,4 +33,12 @@ public class Progetto {
 
     public void setDescrizione(String descrizione) { this.descrizione = descrizione; }
 
+    public Progetto(){};
+
+    public Progetto(long id, String titolo, String categoria, String descrizione) {
+        this.id = id;
+        this.titolo = titolo;
+        this.categoria = categoria;
+        this.descrizione = descrizione;
+    }
 }

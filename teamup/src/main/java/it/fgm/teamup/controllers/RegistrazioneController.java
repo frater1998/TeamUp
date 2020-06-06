@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.validation.Valid;
+
 import java.util.Date;
 
 @Controller
@@ -24,51 +24,28 @@ public class RegistrazioneController {
 
 
     @GetMapping("/registrati")
-    public String get(@ModelAttribute @Valid Utente utente, BindingResult result, Model model) {
+    public String get(@ModelAttribute  Utente utente, BindingResult result, Model model) {
 
         return "registrati";
     }
 
     @PostMapping("/registrati")
-    public String post(@ModelAttribute  Utente utente, BindingResult result, Model model)  {
+    public String post(@ModelAttribute  Utente utente, BindingResult result)  {
 
-      /*  if(result.hasErrors()){
+         if(result.hasErrors()){
             return "registrati";
         }
 
-       */
-
-
-        utente.setEmail(utente.getEmail());
-        utente.setPassword(utente.getPassword());
         utente.setNome(utente.getNome());
         utente.setCognome(utente.getCognome());
-        utente.setDataNascita(utente.getDataNascita());
-
-
-
-        model.addAttribute("email", utente.getEmail());
-        model.addAttribute("password", utente.getPassword());
-        model.addAttribute("nome", utente.getNome());
-        model.addAttribute("cognome", utente.getCognome());
-
+        utente.setEmail(utente.getEmail());
+        utente.setPassword(utente.getPassword());
 
 
         Utente u = userService.salva(utente);
 
+        return "login";
 
-
-
-        return "index";
-   // }
-
-    //viene richiamato prima di ogni request handler all'interno del controller
-    //i request handler sono tutti i metodi mappati nel controller con @getMapping
-   /* @ModelAttribute
-    public void setWelcomeMsg(Model model) {
-        model.addAttribute("welcomeMsg","Ciao Fernando!!!!");*/
-
-        //return "registrati";
     }
 
 

@@ -1,17 +1,22 @@
-<!DOCTYPE HTML>
-<html xmlns:th="https://www.thymeleaf.org">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Getting Started: Handling Form Submission</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Hello World!</title>
 </head>
 <body>
-<h1>Result</h1>
+<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
 
-<!--
-<p th:text="'id: ' + ${}" />
-<p th:text="'content: ' + ${}" />
-<a href="/greeting">Submit another message</a>
 
--->
+<form th:action="@{/logout}" method="post">
+    <span sec:authentication="name"></span>
+    <input type="submit" value="Esci"/>
+</form>
+
+
+
 </body>
 </html>

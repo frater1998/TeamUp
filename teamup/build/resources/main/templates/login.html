@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Spring Security Example </title>
 </head>
 <body>
-<form class="form-horizontal">
-    <div class="field">
-        <p class="control has-icons-left has-icons-right">
-            <input class="input" type="email" placeholder="Email">
-            <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-            <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-        </p>
+
+<div>
+    <h2>Accedi</h2>
+    <div th:if="${param.error}">
+        Nome utente o password errati!
     </div>
-    <div class="field">
-        <p class="control has-icons-left">
-            <input class="input" type="password" placeholder="Password">
-            <span class="icon is-small is-left">
-      <i class="fas fa-lock"></i>
-    </span>
-        </p>
+    <div th:if="${param.logout}">
+        Hai effettuato il logout. A presto!
     </div>
-    <div class="field">
-        <p class="control">
-            <button class="button is-success">
-                Login
-            </button>
-        </p>
-    </div>
-</form>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label>Username : <input type="text" name="username"/></label>
+        </div>
+        <div>
+            <label>Password: <input type="password" name="password"/></label>
+        </div>
+        <div><input type="submit" value="Entra"/></div>
+    </form>
+</div>
+
+
 </body>
 </html>

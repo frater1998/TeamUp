@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html xmlns: th="http://thymeleaf.org">
+<html xmlns: th="http://thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,7 +64,7 @@
                     <a  href="registrati" class="button is-primary">
                         <strong>Sign up</strong>
                     </a>
-                    <a class="button is-light">
+                    <a class="button is-light" href="login">
                         Log in
                     </a>
                 </div>

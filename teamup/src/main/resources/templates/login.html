@@ -1,11 +1,29 @@
-<!DOCTYPE HTML>
-<html xmlns:th="https://www.thymeleaf.org">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Getting Started: Handling Form Submission</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Spring Security Example </title>
 </head>
 <body>
-<h1>Result</h1>
+
+<div>
+    <h2>Accedi</h2>
+    <div th:if="${param.error}">
+        Nome utente o password errati!
+    </div>
+    <div th:if="${param.logout}">
+        Hai effettuato il logout. A presto!
+    </div>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label>Username : <input type="text" name="username"/></label>
+        </div>
+        <div>
+            <label>Password: <input type="password" name="password"/></label>
+        </div>
+        <div><input type="submit" value="Entra"/></div>
+    </form>
+</div>
 
 
 </body>

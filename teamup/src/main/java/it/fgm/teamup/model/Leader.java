@@ -1,11 +1,17 @@
 package it.fgm.teamup.model;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class Leader extends Utente {
-    private int id;
+@Entity
+public class Leader  {
 
-    public int getId() { return id; }
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
-    public void setId(int id) { this.id = id; }
+
 }
