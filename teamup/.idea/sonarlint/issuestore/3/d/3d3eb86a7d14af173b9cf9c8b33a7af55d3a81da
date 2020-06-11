@@ -1,0 +1,13 @@
+
+N
+java:S1854"5Remove this useless assignment to local variable "u".(δϊριώÿÿÿÿ
+T
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ςϊί†
+?
+java:S1481"&Remove this unused "u" local variable.(δϊριώÿÿÿÿ
+j
+java:S1128"QRemove this unused import 'org.springframework.format.annotation.DateTimeFormat'.(‡τƒψÿÿÿÿ
+Y
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ην§“ψÿÿÿÿ
+?
+java:S1128"+Remove this unused import 'java.util.Date'.(Έ…Όό

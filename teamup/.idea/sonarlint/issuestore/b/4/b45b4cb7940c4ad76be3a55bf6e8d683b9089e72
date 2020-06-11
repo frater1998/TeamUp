@@ -1,0 +1,9 @@
+
+h
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ƒ»ÊÞûÿÿÿÿ
+`
+java:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Üÿìæùÿÿÿÿ
+[
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ÍÎÙ$
+“
+java:S1130"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(‰É²P8ÊÇÂžª.
