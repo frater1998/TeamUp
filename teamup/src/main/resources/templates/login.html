@@ -14,17 +14,28 @@
     <div th:if="${param.logout}">
         Hai effettuato il logout. A presto!
     </div>
-    <form th:action="@{/login}" method="post">
-        <div>
-            <label>Username : <input type="text" name="username"/></label>
+    <!--/*@thymesVar id="utente" type="it.fgm.teamup.model.Utente"*/-->
+    <form th:action="@{/login}"  th:object="${utente}" method="post">
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="text" placeholder="Email" value="hello@" th:field="*{email}" id="email" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:90%; border: 1px solid #999; outline: none">
+            </div>
         </div>
-        <div>
-            <label>Password: <input type="password" name="password"/></label>
+
+        <div class="field">
+            <label for="password" class="label">password</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="password" placeholder="password input" value="password" th:field="*{password}" id="password" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:90%; border: 1px solid #999; outline: none">
+            </div>
         </div>
-        <div><input type="submit" value="Entra"/></div>
+        <div><input type="submit"value="Entra" /></div>
     </form>
 </div>
 
 
+<link rel = "stylesheet" href ="https://cdn.jsdelvir.net/npm/bulma@0.8.0/css/bulma.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
 </html>

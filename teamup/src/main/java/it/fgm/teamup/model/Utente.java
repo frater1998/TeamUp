@@ -1,8 +1,6 @@
 package it.fgm.teamup.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.security.core.userdetails.User;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;

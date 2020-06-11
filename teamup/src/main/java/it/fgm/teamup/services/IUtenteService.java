@@ -11,12 +11,7 @@ import java.util.List;
 public interface IUtenteService {
     public Utente salva(Utente utente);
 
-    @Query("select u from Utente u where u.email = :email")
-     Utente findByEmail(@Param( "email" ) String email) throws UtenteNonTrovato;
-
-    //@Query("select u from Utente u where u.password = :password")
-    Utente findByPassword(@Param( "password") String password) throws UtenteNonTrovato;
-
+    public Utente findByEmailAndPassword(String email, String password);
     //  public List<Utente> getAll();
 //    public Utente findById(int id) ;
   //  public void deleteById(int id) ;

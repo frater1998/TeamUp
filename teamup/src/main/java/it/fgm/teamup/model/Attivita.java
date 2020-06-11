@@ -1,9 +1,6 @@
 package it.fgm.teamup.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 
@@ -12,26 +9,35 @@ import java.util.Date;
 public class Attivita {
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
+
 
    private String obiettivi;
 
-   private short percentualeCompletamento;
+   private String percentualeCompletamento;
 
    Date dataInizio;
    Date dataFine;
 
-    public int getId() { return id; }
+     public Attivita(){};
+     public Attivita( long id, String obiettivi, String percentualeCompletamento){
 
-    public void setId(int id) { this.id = id; }
+         this.id = id;
+         this.obiettivi = obiettivi;
+         this.percentualeCompletamento = percentualeCompletamento;
+     };
+
+    public long getId() { return id; }
+
+    public void setId(long id) { this.id = id; }
 
     public String getObiettivi() { return obiettivi; }
 
     public void setObiettivi(String obiettivi) { this.obiettivi = obiettivi; }
 
-    public int getPercentualeCompletamento() { return percentualeCompletamento; }
+    public String getPercentualeCompletamento() { return percentualeCompletamento; }
 
-    public void setPercentualeCompletamento(short percentualeCompletamento) { this.percentualeCompletamento = percentualeCompletamento; }
+    public void setPercentualeCompletamento(String percentualeCompletamento) { this.percentualeCompletamento = percentualeCompletamento; }
 
     public Date getDataInizio() { return dataInizio; }
 

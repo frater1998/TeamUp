@@ -1,7 +1,5 @@
 package it.fgm.teamup.serviceimpl;
 
-
-
 import it.fgm.teamup.exception.UtenteNonTrovato;
 import it.fgm.teamup.model.Utente;
 import it.fgm.teamup.repository.IUtenteRepository;
@@ -16,7 +14,6 @@ import java.util.List;
 public class UtenteServiceImpl  implements IUtenteService {
 
 
-
     @Autowired            //code injection!
     private IUtenteRepository utenteRepository;
     private IUtenteService utenteService;
@@ -27,19 +24,11 @@ public class UtenteServiceImpl  implements IUtenteService {
         return utenteRepository.save(utente);
     }
 
-
     @Override
-    public Utente findByEmail(String email) throws UtenteNonTrovato {
-
-        return utenteService.findByEmail(email);
+    public Utente findByEmailAndPassword(String email, String password) {
+        return utenteRepository.findByEmailAndPassword( email,password );
     }
 
-    @Override
-
-    public Utente findByPassword(String password) throws UtenteNonTrovato {
-        return utenteService.findByPassword( password );
-
-    }
 
 
 }
