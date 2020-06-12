@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <title>Hello World!</title>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="Sign Out"/>
-</form>
+<h1>Result</h1>
 
+<!--
+<p th:text="'id: ' + ${}" />
+<p th:text="'content: ' + ${}" />
+<a href="/greeting">Submit another message</a>
 
-<form th:action="@{/logout}" method="post">
-    <span sec:authentication="name"></span>
-    <input type="submit" value="Esci"/>
-</form>
-
-
-
-<div style="text-align: center">
-    <h1>Welcome to Bookshop Website Admin Panel</h1>
-    <b>${user.fullname} (${user.email})</b>
-    <br><br>
-    <a href="/logout">Logout</a>
-</div>
-
-
-
+-->
 </body>
 </html>

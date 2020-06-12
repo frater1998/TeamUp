@@ -2,6 +2,7 @@ package it.fgm.teamup.controllers;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ public class LogoutController extends HttpServlet {
         super();
     }
 
+    @GetMapping("/logout")
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession(false);

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class = "Progetto" style=" width:300px; box-shadow: 0 0 3px 0 rgb(0,0,0.3); background: #fff; padding:20px; margin: 8% auto 0; text-align: center">
+    <h1 style = "color:#1c8adb; margin-bottom: 30px">Crea Progetto</h1>
+    <form th:action="@{/progetto}" th:object="${progetto}" method="post">
+
+        <div class="field">
+            <label class="label" for="titolo">Titolo</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Nome" th:field="*{titolo}" id="titolo" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:90%; border: 1px solid #999; outline: none">
+            </div>
+        </div>
+
+        <div class="field" >
+            <label for="categoria">Categoria</label>
+            <select class="form-control"  th:field="*{categoria}" id="categoria" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none">
+                <option disabled value="select">Please select...</option>
+                <option  th:value="musica">Musica</option>
+                <option  th:value="sport">Sport</option>
+                <option  th:value="cinema">Cinema</option>
+                <option  th:value="didattica">Didattica</option>
+                <option  th:value="altro">Altro</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="descrizione">Descrizione</label>
+            <textarea class="form-control" th:field="*{descrizione}" id="descrizione" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none" placeholder="es. gruppo di sviluppo software per supporto on-line alla didattica"></textarea>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" style = "color: #fff; background-color: #1c8adb; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">Submit</button>
+            </div>
+            <div class="control">
+                <button type="reset" class="button is-link is-light" style = "color: #fff; background-color: #1c8adb; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">Cancel</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+
+</body>
+</html>

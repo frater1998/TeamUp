@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href ="https://cdn.jsdelvir.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>nuovaAttività</title>
+</head>
+<body style = "font-family: sans-serif; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size: 100%;  margin : 0; padding :0" >
+
+
+<div class = "InserimentoAttività" style=" float: left; color: steelblue; margin-left: 20px">
+    <h1 style = "color:#1c8adb; margin-bottom: 30px">Crea una nuova attività</h1>
+    <!--/*@thymesVar id="attivita" type=""*/-->
+    <form th:action="@{/nuovaAttività}" th:object="${attivita}" method="post">
+
+        <div class="field">
+            <label for="obiettivi">Obiettivi</label>
+            <textarea class="form-control" th:field="*{obiettivi}" id="obiettivi"  style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none" placeholder="es. gruppo di sviluppo software per supporto on-line alla didattica"></textarea>
+        </div>
+        <p></p>
+
+        <div class="field" >
+            <label for="percentualeCompletamento">percentualeCompletamento</label>
+            <select class="form-control" th:field="*{percentualeCompletamento}" id="percentualeCompletamento" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none">
+                <option th:value="20" th:text="20">20%</option>
+                <option th:value="40" th:text="40">40%</option>
+                <option th:value="60" th:text="60">60%</option>
+                <option th:value="80" th:text="80">80%</option>
+                <option th:value="100" th:text="100">100%</option>
+            </select>
+        </div>
+
+        <p></p>
+        <div class="field is-grouped">
+            <div class="form-control">
+                <button class="button is-link" style = "color: #fff; background-color: #1c8adb; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">Submit</button>
+            </div>
+            <div class="form-control">
+                <button class="button is-link is-light" style = "color: #fff; background-color: #1c8adb; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">Cancel</button>
+            </div>
+        </div>
+
+
+    </form>
+
+
+</div>
+
+</body>
+</html>

@@ -28,7 +28,7 @@ public class AttivitaServiceImpl  implements IAttivitàService {
     @Override
     public Attivita findById(int id){
 
-        return attivitaService.findById(id);
+        return attivitaRepository.findById(id);
     }
 
 

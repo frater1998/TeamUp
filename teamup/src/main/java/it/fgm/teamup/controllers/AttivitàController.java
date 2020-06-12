@@ -30,11 +30,8 @@ public class AttivitàController {
             return "attivita";
         }
 
-
         attivita.setObiettivi(attivita.getObiettivi());
         attivita.setPercentualeCompletamento(attivita.getPercentualeCompletamento());
-
-
 
         Attivita a = attivitaService.salva(attivita);
 
