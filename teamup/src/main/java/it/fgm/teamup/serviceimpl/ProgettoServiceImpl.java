@@ -9,7 +9,10 @@ import it.fgm.teamup.services.IUtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-public class ProgettoServiceImpl {
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProgettoServiceImpl implements IProgettoService{
 
 
     @Autowired
@@ -22,9 +25,21 @@ public class ProgettoServiceImpl {
     }
 
 
-
-    public Progetto findById(long id) {
+    @Override
+    public Progetto findById(int id){
         return progettoRepository.findById( id );
+    }
+
+    @Override
+   public List<Progetto> getAll(){
+        return  progettoRepository.findAll();
+    }
+
+    @Override
+    public void deleteById(int id) {
+
+        progettoRepository.deleteById( id );
+
     }
 
 

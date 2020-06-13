@@ -1,0 +1,38 @@
+<!DOCTYPE html >
+
+<html xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"/>
+</head>
+
+<body>
+<div th:switch="${progetto}">
+    <h2 th:case="null"> Non ci sono progetti!</h2>
+    <div th:case="*">
+        <h2>Progetti:</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="progetto : ${progetto}">
+                <td th:text="${progetto.titolo}"></td>
+                <td th:text="${progetto.categoria}"></td>
+                <td th:text="${progetto.descrizione}"></td>
+                <td><a th:href="@{/update-prog/{id}(id=${progetto.id})}">Edit</a></td>
+                <td><a th:href="@{/delete/{id}(id=${progetto.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -9,7 +9,7 @@ public class Progetto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private int id;
     private String titolo;
     private String categoria;
     private String descrizione;
@@ -17,9 +17,9 @@ public class Progetto {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "progetto", cascade = CascadeType.ALL)
     List<Partecipazione> partecipazione;
 
-    public long getId() { return id; }
+    public int getId() { return id; }
 
-    public void setId(long id) { this.id = id; }
+    public void setId(int id) { this.id = id; }
 
     public String getTitolo() { return titolo; }
 
@@ -35,10 +35,11 @@ public class Progetto {
 
     public Progetto(){};
 
-    public Progetto(long id, String titolo, String categoria, String descrizione) {
+    public Progetto(int id, String titolo, String categoria, String descrizione) {
         this.id = id;
         this.titolo = titolo;
         this.categoria = categoria;
         this.descrizione = descrizione;
     }
+
 }
