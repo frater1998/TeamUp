@@ -1,6 +1,17 @@
 
-V	java:S125'"<This block of commented-out lines of code should be removed.(öşåøÿÿÿÿ
-b
-java:S1128"ERemove this unused import 'it.fgm.teamup.exception.UtenteNonTrovato'.(ƒâÜ8íÕ—½ª.
+E
+java:S11482"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8š…‡·­.
+¨
+java:S44496"ŠAnnotate the parameter with @javax.annotation.Nullable in method 'save' declaration, or make sure that null can not be passed as argument.(¸çì8œ¥Š·­.
+T	java:S106E"9Replace this use of System.out or System.err by a logger.(†°Ö88š…‡·­.
+g
+java:S2095%"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8š…‡·­.
+]	java:S125h"<This block of commented-out lines of code should be removed.(öşåøÿÿÿÿ8›ñ–‰­.
 S
-java:S1068"1Remove this unused "utenteService" private field.(¥ÄÑ™ûÿÿÿÿ8íÕ—½ª.
+java:S1068"1Remove this unused "utenteService" private field.(¥ÄÑ™ûÿÿÿÿ8›ñ–‰­.
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(ˆÖ¬ğ8š…‡·­.
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(×Ú€ƒüÿÿÿÿ8š…‡·­.
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8ûŞ—Š­.
+]	java:S125U"<This block of commented-out lines of code should be removed.(œÙ¯Œûÿÿÿÿ8š…‡·­.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(Ÿö¹¶şÿÿÿÿ8š…‡·­.

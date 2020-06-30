@@ -1,10 +1,5 @@
 
-i
-java:S1128"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô8¹ˆ½ª.
-l
-java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8¹ˆ½ª.
-p
-java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ
-b
-java:S1128"ERemove this unused import 'it.fgm.teamup.exception.UtenteNonTrovato'.(ƒâÜ8¹ˆ½ª.
-Q	java:S125"<This block of commented-out lines of code should be removed.(¢Î„¶
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Ìí•Š­.
+]	java:S125"<This block of commented-out lines of code should be removed.(˜”ÉÇüÿÿÿÿ8×‡†·­.
+X	java:S125"<This block of commented-out lines of code should be removed.(¢Î„¶8©óÅˆ­.

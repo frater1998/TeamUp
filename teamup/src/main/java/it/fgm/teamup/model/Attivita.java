@@ -19,6 +19,19 @@ public class Attivita {
    Date dataInizio;
    Date dataFine;
 
+     @JoinColumn(name = "progetto_id",
+             referencedColumnName = "id")
+   @ManyToOne
+   private Progetto progetto;
+
+     public Progetto getProgetto() {
+         return progetto;
+     }
+
+     public void setProgetto(Progetto progetto) {
+         this.progetto = progetto;
+     }
+
      public Attivita(){};
      public Attivita( long id, String obiettivi, String percentualeCompletamento){
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="teamup_new@localhost" uuid="8a857d51-f048-4f64-969e-8c1f82ad0168">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/teamup_new?useUnicode=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="nuovodb@localhost" uuid="3b43686e-9786-4d71-a945-eaefe459bb67">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/nuovodb?useUnicode=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false</jdbc-url>
+    </data-source>
+  </component>
+</project>

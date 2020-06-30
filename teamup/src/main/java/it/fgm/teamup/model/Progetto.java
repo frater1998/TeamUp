@@ -14,8 +14,17 @@ public class Progetto {
     private String categoria;
     private String descrizione;
 
+
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "progetto", cascade = CascadeType.ALL)
     List<Partecipazione> partecipazione;
+
+    public List<Partecipazione> getPartecipazione() {
+        return partecipazione;
+    }
+
+    public void setPartecipazione(List<Partecipazione> partecipazione) {
+        this.partecipazione = partecipazione;
+    }
 
     public int getId() { return id; }
 

@@ -8,13 +8,21 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpSession;
+
 @Repository
 public interface IUtenteRepository extends JpaRepository<Utente,Integer> {
+
+
+    public Utente findById(int id);
+
+
+    public Utente findBySession(String session);
 
 
     public Utente findByEmailAndPassword(String email, String password);
 
 
-
+    Utente findByEmail(String email);
 }
 

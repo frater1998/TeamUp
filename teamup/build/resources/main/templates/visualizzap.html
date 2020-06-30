@@ -9,30 +9,54 @@
 </head>
 
 <body>
-<div th:switch="${progetto}">
-    <h2 th:case="null"> Non ci sono progetti!</h2>
-    <div th:case="*">
+
+<div class="container">
+    <div>
+    <div>
+        <div>
         <h2>Progetti:</h2>
-        <table>
+        <table border="1">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Email</th>
+                <th>Titolo</th>
+                <th>Categoria</th>
+                <th>Descrizione</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="progetto : ${progetto}">
-                <td th:text="${progetto.titolo}"></td>
+                <td>
+                <a th:text="${progetto.titolo}" th:href="@{/singoloprog/{id}(id=${progetto.id})}"></a>
+            </td>
                 <td th:text="${progetto.categoria}"></td>
                 <td th:text="${progetto.descrizione}"></td>
-                <td><a th:href="@{/update-prog/{id}(id=${progetto.id})}">Edit</a></td>
-                <td><a th:href="@{/delete/{id}(id=${progetto.id})}">Delete</a></td>
+                <td>
+                    <a class="delete" th:href="@{/update-prog/{id}(id=${progetto.id})}">
+                        <span class="icon">
+                            <i class="far fa-edit"></i>
+                        </span>
+                    </a>
+                </td>
+                <td>
+                    <a  th:href="@{/delete/{id}(id=${progetto.id})}">
+                        <span class="icon" >
+                            <i class="fas fa-minus-circle"></i>
+                        </span>
+
+                    </a>
+                </td>
             </tr>
             </tbody>
         </table>
-    </div>
-</body>
 
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</div>
+    </div>
+</div>
+</div>
+</body>
 </html>

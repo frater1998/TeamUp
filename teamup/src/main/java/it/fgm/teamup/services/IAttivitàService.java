@@ -6,9 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 public interface IAttivitàService {
-    public Attivita salva(Attivita attivita);
 
 
-    Attivita findById(@Param( "id" ) int id);
+    Attivita save(Attivita attivita);
 
 }

@@ -2,3 +2,5 @@
 f	java:S114"QRename this interface name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Èş°«
 e
 java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ
+i
+java:S1128"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô8²¢ˆ­.

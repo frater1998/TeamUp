@@ -1,6 +1,5 @@
 package it.fgm.teamup.model;
 
-import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -11,7 +10,7 @@ public class Utente  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private int id;
     private String nome;
     private String cognome;
 
@@ -21,6 +20,17 @@ public class Utente  {
     private String password;
 
     private String username;
+
+    @OneToOne
+    private Sessione session;
+
+    public Sessione getSession() {
+        return session;
+    }
+
+    public void setSession(Sessione session) {
+        this.session = session;
+    }
 
     public String getUsername() {
         return username;
@@ -39,8 +49,13 @@ public class Utente  {
     }
 
     @OneToMany(mappedBy = "utente", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    List<Partecipazione>partecipazione;
+    private List<Partecipazione> partecipazione;
 
+
+    public Utente getUtente() {
+
+        return this;
+    }
 
 
     public Utente(){};
@@ -50,7 +65,7 @@ public class Utente  {
         this.password = password;
     };
 
-    public Utente(String nome, String cognome, long id, Date dataNascita, String email,
+    public Utente(String nome, String cognome, int id, Date dataNascita, String email,
                   String password, String username, List<Partecipazione> partecipazione)
     {
         this.nome = nome;
@@ -97,11 +112,11 @@ public class Utente  {
     }
 
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }

@@ -13,25 +13,24 @@ import org.springframework.transaction.annotation.Transactional;
 public class AttivitaServiceImpl  implements IAttivitàService {
 
 
-
     @Autowired            //code injection!
     private IAttivitàRepository attivitaRepository;
     private IAttivitàService attivitaService;
 
     @Override
     @Transactional        //da utilizzare durante le transazioni con il db
-    public Attivita salva(Attivita attivita) {
+    public Attivita save(Attivita attivita) {
         return attivitaRepository.save(attivita);
     }
 
 
-    @Override
+    /*
     public Attivita findById(int id){
 
         return attivitaRepository.findById(id);
     }
 
-
+*/
 }
 
 

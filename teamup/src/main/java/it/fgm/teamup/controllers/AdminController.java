@@ -14,10 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class AdminController {
 
-    @GetMapping("/admin_page")
+    @GetMapping("/admin")
     public String doGet(@ModelAttribute Admin admin){
 
-        return "admin_page";
+        return "admin";
     }
 
 }

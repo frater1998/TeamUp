@@ -1,0 +1,16 @@
+
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Ä››¬.
+l	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à˜ó8˜˜Ã–¬.
+a
+java:S1128"DRemove this unused import 'it.fgm.teamup.services.IProgettoService'.(øÖ8’êÒ‡­.
+y	java:S116"dRename this field "partecipazione_confermata" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß’
+i	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à˜ó8˜˜Ã–¬.
+K
+java:S1905C")Remove this unnecessary cast to "Utente".(ÉğÙ¹ÿÿÿÿÿ8åæƒ‡­.
+k
+java:S1128"NRemove this unused import 'it.fgm.teamup.repository.PartecipazioneRepository'.(«ÙÄª8ä†Ô‡­.
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò÷ğÓ8ãà™¬.
+j	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Êœù8˜˜Ã–¬.
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8åÁÓ‡­.

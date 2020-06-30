@@ -9,7 +9,9 @@ public interface IProgettoService {
 
     public Progetto salva(Progetto progetto);
 
-    public Progetto findById(int id) throws IllegalArgumentException;
+    public Progetto findById(int id) ;
+
+
 
       public List<Progetto> getAll();
 

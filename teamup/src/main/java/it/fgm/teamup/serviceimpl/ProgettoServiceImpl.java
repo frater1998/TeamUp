@@ -30,6 +30,7 @@ public class ProgettoServiceImpl implements IProgettoService{
         return progettoRepository.findById( id );
     }
 
+
     @Override
    public List<Progetto> getAll(){
         return  progettoRepository.findAll();
