@@ -1,0 +1,41 @@
+
+O
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8Ÿ¢ø®.
+ª
+java:S2681Œ"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(¡»¢üùÿÿÿÿ8ÿ‘–®.
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8È Ö©±.
+^	java:S125û"<This block of commented-out lines of code should be removed.(¢‡¶Ãüÿÿÿÿ8Ÿó¹ª±.
+E
+java:S1148_"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ‘–®.
+c
+java:S1226Ó"EIntroduce a new variable instead of reusing the parameter "progetto".(«âüğ8ÆÂ£¦°.
+g
+java:S1192“"JDefine a constant instead of duplicating this literal "attivitÃ " 3 times.(¤ˆß8ÿ‘–®.
+[
+java:S2441“">Make "Attivita" serializable or don't store it in the session.(¤ˆß8ü´²ª±.
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8Ÿ¢ø®.
+g
+java:S1192,"JDefine a constant instead of duplicating this literal "progetto" 12 times.(û£ß8ÿ‘–®.
+j
+java:S3973Š"GUse indentation to denote the code conditionally executed by this "if".(ê õïùÿÿÿÿ8ÿ‘–®.
+p	java:S100§"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¥­ùÿÿÿÿÿ8•³·£°.
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ùô˜è8Ÿ¢ø®.
+`
+java:S2441c">Make "Progetto" serializable or don't store it in the session.(¤Ğª²şÿÿÿÿ8ü´²ª±.
+k	java:S100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞªÂÉ8¡·¥°.
+c
+java:S1226‰"EIntroduce a new variable instead of reusing the parameter "progetto".(…š’ë8ö¦É®.
+z	java:S116"^Rename this field "attivitÃ Repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿öîÂ8Ÿ¢ø®.
+n
+java:S1226ˆ"KIntroduce a new variable instead of reusing the parameter "partecipazione".(†‹„Åıÿÿÿÿ8¡¼¸®.
+F
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ‘–®.
+Y	java:S125¸"<This block of commented-out lines of code should be removed.(ÀëŠ8šà¥°.
+o
+java:S1192?"RDefine a constant instead of duplicating this literal "homePage_progetti" 3 times.(îƒ¶í8•†±¨±.
+p
+java:S1128"SRemove this unused import 'com.sun.xml.bind.v2.schemagen.xmlschema.LocalAttribute'.(ùô˜è8Ÿ¢ø®.
+o	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œª¡ıÿÿÿÿ8ÿ‘–®.

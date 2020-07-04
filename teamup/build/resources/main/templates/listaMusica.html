@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>listaMusica</title>
 </head>
-<body style = "margin: 0; padding: 0; font-family: 'Century Gothic'; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size : 100%">
+<body> <!--
+style = "margin: 0; padding: 0; font-family: 'Century Gothic'; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg);
+background-size : 100%" -->
     <ul style = "float: left; list-style-type: none; margin-top: 15px;">
         <li style="display: inline-block"><a href = "homePage_progetti" style="text-decoration: none; color: steelblue; padding: 5px 20px; border: 1px solid #fff">vai alla home</a></li>
     </ul>
     <h1 style = "color:#ffffff; margin-left: 45%">Musica</h1>
-    <div class="card" style="background-color: black; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
+   <!-- <div class="card" style="background-color: black; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
         <div class="card-header" style = "color: white">
             Leader del team : Pistacchio Valentino
         </div>
-        <div class="card-body">
+        -->
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Titolo</th>
+            <th>Categoria</th>
+            <th>Descrizione</th>
+            <th>Entra</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="progetto : ${progetto}">
+            <td>
+                <a th:text="${progetto.titolo}"></a>
+            </td>
+            <td th:text="${progetto.categoria}"></td>
+            <td th:text="${progetto.descrizione}"></td>
+            <td>
+                <a th:href="@{/creapart-tm/{id}(id=${progetto.id})}">
+                        <span class="icon">
+                           <i class="fas fa-portal-enter"></i>
+                        </span>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+      <!--  <div class="card-body">
             <h5 class="card-title" style = "color: white">Creazione band</h5>
             <p class="card-text" style = "color: white">Si cercano 5 componenti per la creazione di una band sponsorizzata dai biscotti balocco, sono richiesti: 1 cantante, 2 chitarristi, 1 tastierista, 1 batterista.</p>
             <a href="#" class="btn btn-primary" style = "color: darkblue">Invia richiesta</a>
@@ -30,5 +59,11 @@
             <a href="popup_richiestaInviata" class="btn btn-primary" style = "color: darkblue">Invia richiesta</a>
         </div>
     </div>
+    -->
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
 </html>

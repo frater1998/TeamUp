@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+
+<html xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"/>
+</head>
+
+<body>
+
+<div class="container">
+    <div>
+        <div>
+            <div>
+                <h2>Partecipazioni da confermare:</h2>
+                <table border="1">
+                    <thead>
+                    <tr>
+                        <th>Ruolo</th>
+                        <th>Part_Conf</th>
+                        <th>Utente</th>
+                        <th>Progetto</th>
+                        <th>Conferma</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="partecipazione : ${partecipazione}">
+                        <td th:text="${partecipazione.ruolo}">
+                        </td>
+                        <td th:text="${partecipazione.partecipazione_confermata}"></td>
+                        <td th:text="${partecipazione.utente.nome}"></td>
+                        <td th:text="${partecipazione.progetto.titolo}"></td>
+                        <td>
+                            <a  th:href="@{/confermaRichiesta/{id}(id=${partecipazione.id})}">
+                        <span class="icon" >
+                           <i class="fas fa-check-circle"></i>
+                        </span>
+
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+                <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

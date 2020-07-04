@@ -27,12 +27,6 @@ p
 @src/main/java/it/fgm/teamup/controllers/AttivitàController.java,d\a\da32b4428aca5af0348d80aa75bb618181cfcf07
 o
 ?src/main/java/it/fgm/teamup/repository/IProgettoRepository.java,4\a\4a67950201d9f864fd4eb52c0c7bc153a69ca7f0
-o
-?src/main/java/it/fgm/teamup/controllers/ProgettoController.java,0\7\074b225af34a6105f6c9bbb0c88daf4bd6271d65
-r
-Bsrc/main/java/it/fgm/teamup/controllers/listaMusicaController.java,e\b\eb7d047b855e1aeca35272f5a320e77b6e7d3b0b
-m
-=src/main/java/it/fgm/teamup/controllers/UtenteController.java,e\7\e7b19ca8c9f591d4227473778437738c4730453a
 \
 ,src/main/java/it/fgm/teamup/model/Admin.java,3\7\3788ae511e705d8bcf9474fe5d682d57ea5f7fa9
 l
@@ -71,3 +65,7 @@ o
 ?src/main/java/it/fgm/teamup/repository/ISessioneRepository.java,0\7\07c036acb09d8ef60409e46062bf54bd6488d8f6
 _
 /src/main/java/it/fgm/teamup/model/Attivita.java,9\5\95ae4691d972aa99b1415d511f32f46383fe7780
+t
+Dsrc/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java,7\2\7255cc441ef652e88de21f8d5a68a7f257bf9d90
+v
+Fsrc/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java,0\c\0ce995c25356f08a07b3893d0018fb1471ba7dac

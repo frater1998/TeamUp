@@ -30,6 +30,11 @@ public class ProgettoServiceImpl implements IProgettoService{
         return progettoRepository.findById( id );
     }
 
+    @Override
+    public List<Progetto> findAllByCategoriaIsMusica(String categoria) {
+        return progettoRepository.findAllByCategoriaIsMusica( categoria );
+    }
+
 
     @Override
    public List<Progetto> getAll(){

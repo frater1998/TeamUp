@@ -10,6 +10,8 @@ import it.fgm.teamup.services.IPartecipazioneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 public class PartecipazioneServiceImpl implements IPartecipazioneService {
 
     @Autowired
@@ -29,6 +31,13 @@ public class PartecipazioneServiceImpl implements IPartecipazioneService {
     @Override
     public Partecipazione findByUtenteId(int id) {
         return partecipazioneRepository.findByUtenteId( id );
+    }
+
+
+
+    @Override
+    public List<Partecipazione> findByPartecipazione_confermataIsFalse(boolean pc) {
+        return partecipazioneRepository.findByPartecipazione_confermataIsFalse( pc );
     }
 
 

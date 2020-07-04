@@ -11,6 +11,7 @@ public interface IProgettoService {
 
     public Progetto findById(int id) ;
 
+   List< Progetto> findAllByCategoriaIsMusica(String categoria);
 
 
       public List<Progetto> getAll();
