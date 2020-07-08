@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#"
+      th:action="@{/modProf/{id}(id=${utente.id})}"
+      th:object="${utente}"
+      method="post">
+    <label for="descrizione">Descrizione</label>
+    <input type="text" th:field="*{descrizione}" id="descrizione" placeholder="Parlaci di te ">
+    <span th:if="${#fields.hasErrors('descrizione')}" th:errors="*{descrizione}"></span>
+
+    <input type="submit" value="Update Profilo">
+</form>
+</body>
+</html>

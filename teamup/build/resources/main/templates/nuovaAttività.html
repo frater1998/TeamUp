@@ -14,16 +14,18 @@
     <h1 style = "color:#1c8adb; margin-bottom: 30px">Crea una nuova attività</h1>
     <!--/*@thymesVar id="attivita" type=""*/-->
     <form th:action="@{/nuovaAttività}" th:object="${attivita}" method="post">
-
         <div class="field">
             <label for="obiettivi">Obiettivi</label>
-            <textarea class="form-control" th:field="*{obiettivi}" id="obiettivi"  style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none" placeholder="es. gruppo di sviluppo software per supporto on-line alla didattica"></textarea>
+            <textarea class="form-control" type="text" placeholder="Descrivi gli obiettivi" value="obiettivi"
+                      th:field="*{obiettivi}" id="obiettivi" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:90%; border: 1px solid #999; outline: none">
+            </textarea>
         </div>
         <p></p>
 
         <div class="field" >
             <label for="percentualeCompletamento">percentualeCompletamento</label>
             <select class="form-control" th:field="*{percentualeCompletamento}" id="percentualeCompletamento" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none">
+                <option th:value="0" th:text="20">0%</option>
                 <option th:value="20" th:text="20">20%</option>
                 <option th:value="40" th:text="40">40%</option>
                 <option th:value="60" th:text="60">60%</option>

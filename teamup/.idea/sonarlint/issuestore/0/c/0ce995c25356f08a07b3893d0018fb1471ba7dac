@@ -1,41 +1,47 @@
 
-O
-java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8Ÿ¢ø®.
-ª
-java:S2681Œ"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(¡»¢üùÿÿÿÿ8ÿ‘–®.
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8È Ö©±.
-^	java:S125û"<This block of commented-out lines of code should be removed.(¢‡¶Ãüÿÿÿÿ8Ÿó¹ª±.
-E
-java:S1148_"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ‘–®.
-c
-java:S1226Ó"EIntroduce a new variable instead of reusing the parameter "progetto".(«âüğ8ÆÂ£¦°.
+k	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞªÂÉ8¼¹ì².
+i
+java:S1192Ö"FDefine a constant instead of duplicating this literal "ciao1" 5 times.(²øŸæûÿÿÿÿ8¼¹ì².
+d
+java:S1192Ù"FDefine a constant instead of duplicating this literal "ciao2" 4 times.(½ˆå­8¼¹ì².
 g
-java:S1192“"JDefine a constant instead of duplicating this literal "attivitÃ " 3 times.(¤ˆß8ÿ‘–®.
-[
-java:S2441“">Make "Attivita" serializable or don't store it in the session.(¤ˆß8ü´²ª±.
-S
-java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8Ÿ¢ø®.
-g
-java:S1192,"JDefine a constant instead of duplicating this literal "progetto" 12 times.(û£ß8ÿ‘–®.
-j
-java:S3973Š"GUse indentation to denote the code conditionally executed by this "if".(ê õïùÿÿÿÿ8ÿ‘–®.
-p	java:S100§"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¥­ùÿÿÿÿÿ8•³·£°.
-R
-java:S1191"5Use classes from the Java API instead of Sun classes.(ùô˜è8Ÿ¢ø®.
-`
-java:S2441c">Make "Progetto" serializable or don't store it in the session.(¤Ğª²şÿÿÿÿ8ü´²ª±.
-k	java:S100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞªÂÉ8¡·¥°.
-c
-java:S1226‰"EIntroduce a new variable instead of reusing the parameter "progetto".(…š’ë8ö¦É®.
-z	java:S116"^Rename this field "attivitÃ Repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿öîÂ8Ÿ¢ø®.
-n
-java:S1226ˆ"KIntroduce a new variable instead of reusing the parameter "partecipazione".(†‹„Åıÿÿÿÿ8¡¼¸®.
+java:S1192+"JDefine a constant instead of duplicating this literal "progetto" 11 times.(û£ß8ÿ‘–®.
+e
+java:S1854…"BRemove this useless assignment to local variable "partecipazione".(ı¶©ûÿÿÿÿ8·À—ï².
+Z
+java:S1854†"<Remove this useless assignment to local variable "progetto".(ã­¦”8‰‹ï².
+o	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œª¡ıÿÿÿÿ8ÿ‘–®.
 F
-java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÿ‘–®.
-Y	java:S125¸"<This block of commented-out lines of code should be removed.(ÀëŠ8šà¥°.
-o
-java:S1192?"RDefine a constant instead of duplicating this literal "homePage_progetti" 3 times.(îƒ¶í8•†±¨±.
-p
-java:S1128"SRemove this unused import 'com.sun.xml.bind.v2.schemagen.xmlschema.LocalAttribute'.(ùô˜è8Ÿ¢ø®.
-o	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œª¡ıÿÿÿÿ8ÿ‘–®.
+java:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾‹÷í².
+[
+java:S2441">Make "Attivita" serializable or don't store it in the session.(¤ˆß8ğßÕğ².
+d
+java:S1192\"GDefine a constant instead of duplicating this literal "utente" 4 times.(ü¹Üè8ù·Ëí².
+c
+java:S1226ã"EIntroduce a new variable instead of reusing the parameter "progetto".(«âüğ8¼¹ì².
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8È Ö©±.
+m
+java:S1192—"ODefine a constant instead of duplicating this literal "partecipazione" 8 times.(“ÇÈº8¼¹ì².
+g
+java:S1192"JDefine a constant instead of duplicating this literal "attivitÃ " 4 times.(¤ˆß8¯âÉí².
+O
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8Ÿ¢ø®.
+z	java:S116"^Rename this field "attivitÃ Repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿öîÂ8Ÿ¢ø®.
+Y	java:S125¦"<This block of commented-out lines of code should be removed.(ÀëŠ8¼¹ì².
+`
+java:S2441b">Make "Progetto" serializable or don't store it in the session.(¤Ğª²şÿÿÿÿ8ğßÕğ².
+S
+java:S1854"5Remove this useless assignment to local variable "s".(ÄÄµë8¼¹ì².
+V
+java:S1481…"3Remove this unused "partecipazione" local variable.(ı¶©ûÿÿÿÿ8·À—ï².
+k
+java:S1192Á"HDefine a constant instead of duplicating this literal "profilo" 3 times.(‰¬¸Ëûÿÿÿÿ8³êï².
+D
+java:S1481"&Remove this unused "s" local variable.(ÄÄµë8¼¹ì².
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8Ÿ¢ø®.
+^	java:S125‹"<This block of commented-out lines of code should be removed.(¢‡¶Ãüÿÿÿÿ8¼¹ì².
+k	java:S100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‚•¤8•³·£°.
+E
+java:S1148^"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ù·Ëí².

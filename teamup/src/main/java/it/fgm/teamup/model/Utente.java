@@ -19,7 +19,7 @@ public class Utente  {
     private String email;
     private String password;
 
-    private String username;
+    private String descrizione;
 
     @OneToOne
     private Sessione session;
@@ -32,12 +32,12 @@ public class Utente  {
         this.session = session;
     }
 
-    public String getUsername() {
-        return username;
+    public String getDescrizione() {
+        return descrizione;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setDescrizione(String username) {
+        this.descrizione = username;
     }
 
     public List<Partecipazione> getPartecipazione() {
@@ -65,7 +65,7 @@ public class Utente  {
         this.password = password;
     };
 
-    public Utente(String nome, String cognome, int id, Date dataNascita, String email,
+    public Utente(String nome, String cognome, int id, String email, String descrizione,
                   String password, String username, List<Partecipazione> partecipazione)
     {
         this.nome = nome;
@@ -73,7 +73,7 @@ public class Utente  {
         this.email = email;
         this.password = password;
         this.id = id;
-        this.username = username;
+        this.descrizione = descrizione;
         this.partecipazione = partecipazione;
     }
 

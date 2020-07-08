@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista partecipanti</title>
+</head>
+<body style = "margin: 0; padding: 0; font-family: 'Century Gothic'; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size : 100%">
+<h1 style = "color:#ffffff; margin-left: 30px">Lista partecipanti</h1>
+<tr th:each="partecipazione : ${partecipazione}">
+    <div class="card" style="width: 30rem; background-color: white; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
+        <div class="card-body" >
+            <h5 class="card-title" style="margin-left: 20px">
+                <td th:text="${partecipazione.utente.nome} + ' ' + ${partecipazione.utente.cognome}"></td>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="margin-left: 20px">
+                <td th:text="${partecipazione.utente.email}"></td>
+            </h6>
+
+            <h6 class="card-subtitle mb-2 text-muted" style="margin-left: 20px">
+                <td th:text="${partecipazione.progetto.titolo}"></td>
+            </h6>
+
+            <p class="card-text" style="margin-left: 20px">
+            <td th:text="${partecipazione.ruolo}"></td>
+            </p>
+            <a th:href="@{/profiloUtente/{id}(id=${partecipazione.utente.id})}" class="card-link" style="margin-left: 20px">Visualizza Profilo</a>
+            <a th:href="@{/deleteUser/{id}(id=${partecipazione.id})}"
+            class="btn btn-primary" style="color: white; background-color: red; margin-left: 150px">Elimina teammate</a>
+        </div>
+    </div>
+</tr>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ñ«è8Õ°«±.
 ]	java:S125"<This block of commented-out lines of code should be removed.(¢ùÙ½ûÿÿÿÿ8üÇˆ­.
 l
 java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8ßÄ½®.
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èüŸ8Õ°«±.
 ]	java:S125"<This block of commented-out lines of code should be removed.(—«Á½øÿÿÿÿ8¦é–‰­.

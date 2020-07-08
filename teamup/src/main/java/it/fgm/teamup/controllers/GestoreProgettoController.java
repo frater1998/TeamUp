@@ -1,7 +1,6 @@
 package it.fgm.teamup.controllers;
 
 
-import com.sun.xml.bind.v2.schemagen.xmlschema.LocalAttribute;
 import it.fgm.teamup.model.*;
 import it.fgm.teamup.repository.*;
 import it.fgm.teamup.services.IProgettoService;
@@ -12,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -47,13 +47,13 @@ public class GestoreProgettoController {
 
     @GetMapping("/listaMusica")
     public String cercaProgettiperMusica(
-                                        @ModelAttribute Progetto progetto,
-                                        BindingResult result,
-                                        Model model) {
-         String musica = "musica";
+            @ModelAttribute Progetto progetto,
+            BindingResult result,
+            Model model) {
+        String musica = "musica";
 
         model.addAttribute( "progetto",
-                progettoRepository.findAllByCategoriaIsMusica(musica) );
+                progettoRepository.findAllByCategoriaIsMusica( musica ) );
         return "listaMusica";
     }
 
@@ -65,8 +65,8 @@ public class GestoreProgettoController {
 
     @GetMapping("/progetto")
     public String creaProgetto(@ModelAttribute Progetto progetto,
-                                ModelMap modelMap,
-                                HttpSession session){
+                               ModelMap modelMap,
+                               HttpSession session) {
 
         if (session.getAttribute( "progetto" ) == null) {
             modelMap.put( "progetto", new Progetto() );
@@ -80,29 +80,29 @@ public class GestoreProgettoController {
     @PostMapping("/progetto")
     public String postcreaProg(@ModelAttribute Progetto progetto,
                                ModelMap modelMap, HttpSession session,
-                               Session ses){
+                               Session ses) {
 
         Sessione sessione = new Sessione();
-        sessione.setId(session.getId());
+        sessione.setId( session.getId() );
 
-        if( sessioneRepository.findById(sessione.getId())!= null){
-           Sessione s =  sessioneRepository.findById( sessione.getId() );
-             Utente utente =  s.getUtente();
-            System.out.println(utente.getId());
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+            Utente utente = s.getUtente();
+            System.out.println( utente.getId() );
             try {
-               session.getAttribute( "utente");
-            } catch (Exception e){
+                session.getAttribute( "utente" );
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            if (progetto != null){
+            if (progetto != null) {
                 session.setAttribute( "progetto", progetto );
                 progettoRepository.save( progetto );
-                System.out.println(progetto.getTitolo());
+                System.out.println( progetto.getTitolo() );
                 Partecipazione partecipazione = new Partecipazione();
                 partecipazione.setRuolo( "LEADER" );
                 partecipazione.setPartecipazione_confermata( true );
-                partecipazione.setUtente( utente);
+                partecipazione.setUtente( utente );
                 partecipazione.setProgetto( progetto );
                 partecipazioneRepository.save( partecipazione );
                 return "homePage_progetti";
@@ -112,8 +112,7 @@ public class GestoreProgettoController {
             }
 
 
-        }
-        else {
+        } else {
             return "redirect:homePage_progetti";
 
         }
@@ -121,22 +120,21 @@ public class GestoreProgettoController {
 
 
     @PostMapping("/nuovaAttività")
-    public String newAttivita(@ModelAttribute Progetto progetto,
-                                      Utente u,
-                                      Attivita attivita,
-                                      Partecipazione partecipazione,
-                                      HttpSession session,
-                              ModelMap modelMap,
-                              Sessione sessione) {
+    public String newAttivita(
+            @ModelAttribute Attivita attivita,
+            Progetto progetto,
+            HttpSession session,
+            ModelMap modelMap,
+            Sessione sessione) {
 
         sessione.setId( session.getId() );
         if (sessioneRepository.findById( sessione.getId() ) != null) {
             Sessione s = sessioneRepository.findById( sessione.getId() );
             Utente utente = s.getUtente();
-            partecipazione = partecipazioneRepository.findByUtenteId( utente.getId() );
-            progetto = partecipazione.getProgetto();
-            if (progettoService.findById( progetto.getId() )!= null)
-            System.out.println( utente.getId() );
+            Partecipazione partecipazione = partecipazioneRepository.findByUtenteId( utente.getId() );
+            progetto = progettoRepository.findByTitolo( progetto.getTitolo() );
+
+
             try {
                 session.getAttribute( "attivita" );
             } catch (Exception e) {
@@ -145,43 +143,62 @@ public class GestoreProgettoController {
 
             if (attivita != null) {
                 session.setAttribute( "attività", attivita );
-                attivita.setProgetto( progetto );
+
                 attivita.setObiettivi( attivita.getObiettivi() );
                 attivita.setPercentualeCompletamento( attivita.getPercentualeCompletamento() );
-                System.out.println(attivita.getId());
+                System.out.println( attivita.getId() );
                 attivitàRepository.save( attivita );
                 System.out.println( attivita.getObiettivi() );
-                return "homePage_progetti";
+                return "singoloprog";
             } else {
                 modelMap.put( "failed", "Add Project Failed" );
-                return "redirect:progetto?error";
+                return "redirect:/progetto?error";
             }
         }
-        return "profiloUtente";
+        return "singoloprog";
     }
 
 
+    @GetMapping("/nuovaAttività")
+    public String getNuovaAttività(@ModelAttribute Attivita attivita, Model model, HttpSession session
+    ) {
 
-@GetMapping("/nuovaAttività")
-
-public String getNuovaAttività(ModelMap modelMap, HttpSession session,
-                               @ModelAttribute  Attivita attivita){
-
-
-    if (session.getAttribute( "attività" ) == null) {
-        modelMap.put( "attività", new Attivita() );
-        return "nuovaAttività";
-    } else {
-        return "nuovaAttività:?error";
+        if (session.getAttribute( "attività" ) == null) {
+            model.addAttribute( "attività", attivita );
+            return "nuovaAttività";
+        } else {
+            return "nuovaAttività:?error";
+        }
     }
 
+    @GetMapping("/modificaAttività/{id}")
+    public String updateAttivita(@PathVariable("id") int id,
+                                 Model model
+    ) {
+        Attivita attivita = attivitàRepository.findById( id );
+        model.addAttribute( "attività", attivita );
+        return "modificaAttività";
+    }
 
-}
+    @PostMapping("/modificaAttività/{id}")
+    public String postupdateAttivita(@PathVariable("id") int id,
+                                     Attivita attivita,
+                                     BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            attivita.setId( id );
+            return "modificaAttivitò";
+        }
+
+        attivitàRepository.save( attivita );
+
+        return "redirect:/singoloprog";
+    }
+
 
     @GetMapping("/visualizzap")
     public String visualizzaProgetti(
-             @ModelAttribute Progetto progetto,
-             Model model) {
+            @ModelAttribute Progetto progetto,
+            Model model) {
 
         model.addAttribute( "progetto", progettoRepository.findAll() );
 
@@ -202,11 +219,10 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
     }
 
     @PostMapping("singoloprog/{id}")
-    public String postSingoloprog(@PathVariable("id" ) int id,
+    public String postSingoloprog(@PathVariable("id") int id,
                                   ModelMap modelMap,
                                   @ModelAttribute Progetto progetto,
-                                  HttpSession session)
-    {
+                                  HttpSession session) {
 
         progetto = progettoRepository.findById( id );
 
@@ -222,12 +238,12 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
     public String creapartTm(
             @PathVariable("id") int id,
             HttpSession session
-    ){
+    ) {
 
         Sessione sessione = new Sessione();
-        sessione.setId(session.getId());
-        System.out.println(session.getId());
-        System.out.println(sessione.getId());
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
         if (sessioneRepository.findById( sessione.getId() ) != null) {
             Sessione s = sessioneRepository.findById( sessione.getId() );
             Utente utente = s.getUtente();
@@ -235,18 +251,18 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
             Partecipazione partecipazione = new Partecipazione();
             partecipazione.setPartecipazione_confermata( false );
             partecipazione.setRuolo( "TEAM-MATE" );
-            partecipazione.setProgetto( progetto);
+            partecipazione.setProgetto( progetto );
             partecipazione.setUtente( utente );
-            System.out.println(partecipazione.getUtente().getNome());
-            System.out.println(partecipazione.getProgetto().getTitolo());
-            System.out.println(partecipazione.getPartecipazione_confermata());
-            System.out.println(partecipazione.getRuolo());
+            System.out.println( partecipazione.getUtente().getNome() );
+            System.out.println( partecipazione.getProgetto().getTitolo() );
+            System.out.println( partecipazione.getPartecipazione_confermata() );
+            System.out.println( partecipazione.getRuolo() );
 
             partecipazioneRepository.save( partecipazione );
 
         }
 
-        return "creapart-tm" ;
+        return "creapart-tm";
     }
           /*  if (session.getAttribute( "progetto" ) == null) {
                // model.put( "progetto", new Progetto() );
@@ -257,11 +273,11 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
 */
 
     @GetMapping("/listaRichieste")
-    public String listaRichieste ( @ModelAttribute Partecipazione partecipazione,
-    Model model) {
+    public String listaRichieste(@ModelAttribute Partecipazione partecipazione,
+                                 Model model) {
 
         model.addAttribute( "partecipazione", partecipazioneRepository.
-                findByPartecipazione_confermataIsFalse(false) );
+                findByPartecipazione_confermataIsFalse( false ) );
 
         return "listaRichieste";
     }
@@ -269,7 +285,7 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
     @PostMapping("/confermaRichiesta/{id}")
     public String confermaRichiesta(@PathVariable("id") long id,
                                     Model model,
-                                    HttpSession session){
+                                    HttpSession session) {
 
 
         Partecipazione partecipazione = partecipazioneRepository.findById( id );
@@ -277,14 +293,14 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
         model.addAttribute( "partecipazione", partecipazione );
         partecipazioneRepository.save( partecipazione );
 
-        return "confermaRichiesta" ;
+        return "confermaRichiesta";
     }
 
 
     @GetMapping("/confermaRichiesta/{id}")
     public String confermaRichiesta(@PathVariable("id") long id,
                                     Model model
-                                    ){
+    ) {
         Partecipazione partecipazione = partecipazioneRepository.findById( id );
 
         partecipazione.setPartecipazione_confermata( true );
@@ -294,21 +310,84 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
         partecipazioneRepository.save( partecipazione );
 
 
-        return "confermaRichiesta" ;
+        return "confermaRichiesta";
     }
+
+    @GetMapping("deleteRichiesta/{id}")
+    public String deleteRichiesta(@PathVariable("id") long id,
+                                  Model model) {
+        Partecipazione partecipazione = partecipazioneRepository.findById( id );
+        partecipazioneRepository.delete( partecipazione );
+        return "listaRichieste";
+    }
+
 
     @GetMapping("/update-prog/{id}")
     public String showUpdateForm(@PathVariable("id") int id, Model model) {
-        Progetto progetto = progettoRepository.findById(id);
-        model.addAttribute("progetto", progetto);
+        Progetto progetto = progettoRepository.findById( id );
+        model.addAttribute( "progetto", progetto );
         return "update-prog";
+    }
+
+
+    @GetMapping("/visualizzaprogtm")
+    public String listprogtm(@ModelAttribute Partecipazione partecipazione,
+                             Model model,
+                             HttpSession session) {
+        Sessione sessione = new Sessione();
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            System.out.println( "ciao1" );
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+            Utente utente = s.getUtente();
+            System.out.println( "ciao2" );
+            partecipazione.setUtente( utente );
+            System.out.println( "ciao3" );
+            System.out.println( partecipazione.getUtente().getNome() );
+            if (partecipazione.getUtente() == utente) {
+                partecipazioneRepository.findByPartecipazione_confermataIsTrue( partecipazione.getUtente() );
+                model.addAttribute( "partecipazione",
+                        partecipazioneRepository.findByPartecipazione_confermataIsTrue( partecipazione.getUtente() ) );
+            }
+        }
+        return "visualizzaprogtm";
+    }
+
+
+    @GetMapping("/lista")
+    public String getListLeader(@ModelAttribute Partecipazione partecipazione,
+                                HttpSession session,
+                                Model model) {
+        Sessione sessione = new Sessione();
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            System.out.println( "ciao1" );
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+            Utente utente = s.getUtente();
+            System.out.println( utente.getNome() );
+            System.out.println( "ciao2" );
+            partecipazione.setUtente( utente );
+            int p = partecipazione.getUtente().getId();
+            if (p == utente.getId()) {
+                partecipazioneRepository.
+                        findByPartecipazione_confermataIsFalseAndRuoloIsLeader();
+                model.addAttribute( "partecipazione", partecipazioneRepository.
+                        findByPartecipazione_confermataIsFalseAndRuoloIsLeader() );
+            }
+            System.out.println( "ciao3" );
+            System.out.println( partecipazione.getUtente().getNome() );
+        }
+        return "lista";
     }
 
     @PostMapping("/update-prog/{id}")
     public String updateProgetto(@PathVariable("id") int id,
                                  Progetto progetto,
-                             BindingResult result, Model model)
-    {
+                                 BindingResult result, Model model) {
         if (result.hasErrors()) {
             progetto.setId( id );
             return "update-prog";
@@ -320,7 +399,7 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
     }
 
     @GetMapping("/delete/{id}")
-    public String deleteUser(@PathVariable("id") int id, Model model) {
+    public String delete(@PathVariable("id") int id, Model model) {
         Progetto progetto = progettoRepository.findById( id );
         progettoRepository.delete( progetto );
         model.addAttribute( "progetto", progettoRepository.findAll() );
@@ -348,18 +427,116 @@ public String getNuovaAttività(ModelMap modelMap, HttpSession session,
 */
 
 
+    @GetMapping("/profilo")
+    public String showSuccess(ModelMap modelMap,
+                              HttpSession session) {
 
-    public void creaPartecipazioneL( Partecipazione partecipazione){
+        Sessione sessione = new Sessione();
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            System.out.println( "ciao1" );
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+            Utente utente = s.getUtente();
+            System.out.println( utente.getNome() );
+            System.out.println( "ciao2" );
 
-        partecipazione.setRuolo( "LEADER");
-        partecipazione.setPartecipazione_confermata( true );
+            modelMap.addAttribute( "utente", utente );
+        }
 
-        partecipazioneRepository.save( partecipazione );
-
+        return "profilo";
 
     }
 
+
+    @GetMapping("/listaPartecipanti/{id}")
+    public String listaPartecipanti(@PathVariable("id") int id,
+                                    @ModelAttribute Partecipazione partecipazione,
+                                    HttpSession session,
+                                    Model model) {
+        model.addAttribute( "partecipazione",
+                partecipazioneRepository.findByProgettoId( id ) );
+
+        return "listaPartecipanti";
+    }
+
+
+    @GetMapping("/visualizzaPartecipanti")
+    public String visualizzapart(
+            @ModelAttribute Partecipazione partecipazione,
+            HttpSession session,
+            Model model) {
+
+        Sessione sessione = new Sessione();
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            System.out.println( "ciao1" );
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+            Utente utente = s.getUtente();
+            System.out.println( utente.getNome() );
+            System.out.println( "ciao2" );
+            partecipazione.setUtente( utente );
+            int p = partecipazione.getUtente().getId();
+            if (p == utente.getId()) {
+
+
+                model.addAttribute( "partecipazione",
+                        partecipazioneRepository.findAllByPartecipazione_confermataIsTrueAndAndRuolo() );
+            }
+
+        }
+        return "visualizzaPartecipanti";
+    }
+
+
+    @GetMapping("/deleteUser/{id}")
+    public String deleteUser(@PathVariable("id") int id, Model model) {
+        Partecipazione partecipazione = partecipazioneRepository.findById( id );
+        partecipazioneRepository.delete( partecipazione );
+        model.addAttribute( "partecipazione", partecipazioneRepository.findAll() );
+        return "redirect:/visualizzaPartecipanti";
+    }
+
+    @GetMapping("/profilo/{id}")
+    public String getProfiloU(@PathVariable("id") int id, HttpSession session, Model model) {
+        Sessione sessione = new Sessione();
+        sessione.setId( session.getId() );
+        System.out.println( session.getId() );
+        System.out.println( sessione.getId() );
+        if (sessioneRepository.findById( sessione.getId() ) != null) {
+            System.out.println( "ciao1" );
+            Sessione s = sessioneRepository.findById( sessione.getId() );
+
+            Utente u = utenteRepository.findById( id );
+            model.addAttribute( "utente", u );
+        }
+        return "profilo";
+    }
+
+    @GetMapping("/modProf/{id}")
+    public ModelAndView showUpdateFormUser(@PathVariable("id") int id, Model model, HttpSession session) {
+        ModelAndView mav = new ModelAndView();
+        mav.addObject( "utente", utenteRepository.findById( id ) );
+        mav.setViewName( "modprof" );
+        return mav;
+    }
+
+    @PostMapping("/modProf/{id}")
+    public ModelAndView updateUtente(@PathVariable("id") int id,
+                              @Validated Utente utente,
+                               BindingResult result,
+                               ModelAndView model,
+                               HttpSession session) {
+
+        utenteService.salva( utente );
+        return new ModelAndView("redirect:/profilo");
+    }
 }
+
+
 
 
 

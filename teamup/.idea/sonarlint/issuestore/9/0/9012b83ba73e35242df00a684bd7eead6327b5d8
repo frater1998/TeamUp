@@ -1,11 +1,11 @@
 
-X
-java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Şãû­­.
 l
 java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8Ñ”’Æª.
-p
-java:S1128	"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ
-q
-java:S1128"ORemove this unused import 'org.springframework.data.repository.CrudRepository'.(Îê¶¬üÿÿÿÿ8”–Æª.
 b
 java:S1128"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Şãû­­.
+q
+java:S1128"ORemove this unused import 'org.springframework.data.repository.CrudRepository'.(Îê¶¬üÿÿÿÿ8”–Æª.
+p
+java:S1128	"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ

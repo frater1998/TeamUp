@@ -18,6 +18,8 @@ public interface IProgettoRepository extends JpaRepository<Progetto, Integer> {
     List< Progetto> findAllByCategoriaIsMusica(String categoria);
 
 
+    Progetto findByTitolo(String titolo);
+
 
 
 

@@ -17,7 +17,7 @@
                 </h4>
     <p style="font-size: 12px">Descrizione del progetto</p>
     <div class = "button" style="position: absolute; top:12%; left:25%; transform: translate(-50%,-50%)">
-        <a href = "modificaProgetto" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; margin-left: 100px; height: 50px">Modifica Progetto</a>
+        <a th:href="@{/update-prog}" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; margin-left: 100px; height: 50px">Modifica Progetto</a>
     </div>
 </div>
 
@@ -25,10 +25,11 @@
     <div class = "info" style="margin-bottom: 25px">
         <h3 style="margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #e0e0e0; color: #353c4e; text-transform: uppercase; letter-spacing: 5px">Informazioni</h3>
         <div class = "button" style="position: absolute; top:12%; left:67%; transform: translate(-50%,-50%)">
-            <a href = "nuovaAttività" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; margin-left: 100px; height: 50px">Aggiungi attività</a>
+            <a th:href="@{/nuovaAttività}" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; margin-left: 100px; height: 50px">Aggiungi attività</a>
         </div>
         <div class = "button" style="position: absolute; top:12%; left:85%; transform: translate(-50%,-50%)">
-            <a href = "listaPartecipanti" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; ">Lista partecipanti</a>
+            <a th:href="@{/listaPartecipanti/{id}(id=${progetto.id})}"
+               class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; ">Lista partecipanti</a>
         </div>
         <div class="info_data" style="display: flex; justify-content: space-between">
             <div class="data" style="width: 45%">
@@ -48,7 +49,8 @@
             <div class="card-body">
                 <h5 class="card-title" style = "color: white">Completato: 0%</h5>
                 <p class="card-text" style = "color: white">Obiettivi eccetera </p>
-                <a href="modificaAttività" class="btn btn-primary" style = "color: steelblue">Modifica Attività</a>
+               <!-- <a th:href="@{/modificaAttività/{id}(id=${attivita.id})}" -->
+                 class="btn btn-primary" style = "color: steelblue">Modifica Attività</a>
             </div>
         </div>
     </div>

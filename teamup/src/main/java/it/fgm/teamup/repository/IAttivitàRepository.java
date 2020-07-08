@@ -12,6 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface IAttivitàRepository extends JpaRepository<Attivita,Integer> {
 
-    Attivita findById(int id);
+    Attivita findById(long id);
+
+    @Query
+    Attivita findByProgettoId(int id);
 }
 

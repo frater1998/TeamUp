@@ -17,6 +17,7 @@ public interface IUtenteService {
 
 
 
+
     public void aggPart(Partecipazione partecipazione, List<Partecipazione> part);
     //  public List<Utente> getAll();
 //    public Utente findById(int id) ;

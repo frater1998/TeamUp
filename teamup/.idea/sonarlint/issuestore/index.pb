@@ -33,8 +33,6 @@ l
 <src/main/java/it/fgm/teamup/controllers/AdminController.java,f\c\fca9ee4242a037907792e25bdf083bb0e22041bf
 _
 /src/main/java/it/fgm/teamup/model/Progetto.java,6\6\661569a0178a8222f8c444a58605ab04d8410353
-x
-Hsrc/main/java/it/fgm/teamup/controllers/ModificaAttivitàController.java,c\a\ca3a7c345309e8ebdf4cd735e90ccc255684b90c
 _
 /src/main/java/it/fgm/teamup/model/Teammate.java,9\1\915fbd7f96184f8dbf8d8d9840387b32c41f36a2
 t
@@ -69,3 +67,5 @@ t
 Dsrc/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java,7\2\7255cc441ef652e88de21f8d5a68a7f257bf9d90
 v
 Fsrc/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java,0\c\0ce995c25356f08a07b3893d0018fb1471ba7dac
+u
+Esrc/main/java/it/fgm/teamup/controllers/nuovaAttivitàController.java,c\f\cfddd1fab1608abecfe7845e25c253d71dc20040

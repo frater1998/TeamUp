@@ -4,8 +4,8 @@ package it.fgm.teamup.model;
 
 public class Admin{
 
-    private String username;
-    private String password;
+    private String username = "admin@admin.it";
+    private String password = "admin";
 
     public Admin() {
     }

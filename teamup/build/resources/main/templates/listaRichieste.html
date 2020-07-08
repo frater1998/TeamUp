@@ -23,6 +23,7 @@
                         <th>Utente</th>
                         <th>Progetto</th>
                         <th>Conferma</th>
+                        <th>Rifiuta</th>
 
                     </tr>
                     </thead>
@@ -31,7 +32,7 @@
                         <td th:text="${partecipazione.ruolo}">
                         </td>
                         <td th:text="${partecipazione.partecipazione_confermata}"></td>
-                        <td th:text="${partecipazione.utente.nome}"></td>
+                        <td th:text="${partecipazione.utente.nome}"  ></td>
                         <td th:text="${partecipazione.progetto.titolo}"></td>
                         <td>
                             <a  th:href="@{/confermaRichiesta/{id}(id=${partecipazione.id})}">
@@ -41,6 +42,18 @@
 
                             </a>
                         </td>
+                        <td>
+                            <a  th:href="@{/deleteRichiesta/{id}(id=${partecipazione.id})}">
+                        <span class="icon" >
+                           <i class="fas fa-minus-circle"></i>
+                        </span>
+
+                            </a>
+                        </td>
+                        <div>
+                            <a th:href="@{/profilo/{id}(id=${partecipazione.utente.id})}">Visualizza Profilo Utente</a>
+                        </div>
+
                     </tr>
                     </tbody>
                 </table>

@@ -34,22 +34,6 @@ public class UtenteServiceImpl  implements IUtenteService {
     @Transactional        //da utilizzare durante le transazioni con il db
     public Utente salva(Utente utente) {
 
-        Session session = sessionFactory.openSession();
-        Transaction tx = session.beginTransaction();
-
-        if (utente != null){
-            try {
-
-
-                session.save( utente );
-                tx.commit();
-                session.close();
-            } catch (Exception e){
-                tx.rollback();
-                session.close();
-                e.printStackTrace();
-            }
-        }
 
         return utenteRepository.save(utente);
     }

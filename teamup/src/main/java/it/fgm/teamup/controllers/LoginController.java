@@ -3,6 +3,7 @@ package it.fgm.teamup.controllers;
 import it.fgm.teamup.model.Sessione;
 import it.fgm.teamup.model.Utente;
 import it.fgm.teamup.repository.ISessioneRepository;
+import it.fgm.teamup.repository.PartecipazioneRepository;
 import it.fgm.teamup.services.ISessioneService;
 import it.fgm.teamup.services.IUtenteService;
 import org.hibernate.Session;
@@ -31,6 +32,9 @@ public class LoginController {
 
     @Autowired
     IUtenteService utenteService;
+
+    @Autowired
+    PartecipazioneRepository partecipazioneRepository;
 
 
     SessionFactory sessionFactory;
@@ -73,15 +77,21 @@ public String get(Utente utente, ModelMap modelMap,
             e.printStackTrace();
         }
 
-        if (user != null){
+
+        if (user != null) {
             session.setAttribute( "utente", user );
 
             s.setUtente( user );
 
             sessioneRepository.save( s );
 
-            return "homePage_progetti";
-        } else {
+            if (partecipazioneRepository.findByUtenteIdAndRuoloIsLeader( user.getId() ) != null) {
+                return "homePageLeader";
+            } else {
+
+                return "homePage_progetti";
+            }
+        }else {
             modelMap.put( "failed", "Login Failed" );
              return "redirect:login?error";
         }
@@ -101,13 +111,6 @@ public String get(Utente utente, ModelMap modelMap,
     return "index";
     }
 
-    @GetMapping("/profilo")
-    public String showSuccess(Locale locale, ModelMap modelMap){
-
-    modelMap.put( "profilo", new Utente() );
-    return "profilo";
-
-    }
 
 
 

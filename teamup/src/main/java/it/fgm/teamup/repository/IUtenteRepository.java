@@ -14,6 +14,8 @@ import javax.servlet.http.HttpSession;
 public interface IUtenteRepository extends JpaRepository<Utente,Integer> {
 
 
+    Utente save(Utente utente);
+
     public Utente findById(int id);
 
 
