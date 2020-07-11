@@ -1,0 +1,78 @@
+
+»it.fgm.teamup.controllers.GestoreProgettoController#cercaProgettiperMusica(Lit/fgm/teamup/model/Progetto;Lorg/springframework/validation/BindingResult;Lorg/springframework/ui/Model;)Ljava/lang/String;Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java8 8(("startingBlock*¨
+startingBlockÄ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java8( ;(¸
+˘
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java7 7(
+%4"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping**
+(
+progettoit.fgm.teamup.model.ProgettoÄ
+˝
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java9 9(
+%5"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute**
+(
+progettoit.fgm.teamup.model.ProgettoŒ
+À
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java9% 9(-(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%4*
+
+%5øº
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java; ;(%
+modelorg.springframework.ui.Model"java.lang.Object*
+1*Ö
+1Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java< <( ¥
+±
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java< <(!
+musicajava.lang.String"__id*
+
+musicaë
+é
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java? ?("2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepositoryçä
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java? ?(G
+%1java.util.List"kit.fgm.teamup.repository.IProgettoRepository#findAllByCategoriaIsMusica(Ljava/lang/String;)Ljava/util/List;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository*
+
+musicajava.lang.String2.findAllByCategoriaIsMusica(Ljava/lang/String;)É
+Ä
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java> ?(I"
+%2org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+
+progetto*
+
+%1java.util.ListÑ
+Å
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java@ @(
+%3"template!listaMusica*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*'
+%
+modelorg.springframework.ui.Model"î
+Ä
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java@ @(
+listaMusica:(
+progettoit.fgm.teamup.model.Progetto:6
+result,org.springframework.validation.BindingResult:%
+modelorg.springframework.ui.ModelB75
+3it.fgm.teamup.controllers.GestoreProgettoController

@@ -1,0 +1,41 @@
+
+qit.fgm.teamup.serviceimpl.ProgettoServiceImpl#salva(Lit/fgm/teamup/model/Progetto;)Lit/fgm/teamup/model/Progetto;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java ("startingBlock*Ð
+startingBlockz
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (,û
+ø
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (
+%2"
+__annotate*<:
+8org.springframework.transaction.annotation.Transactional**
+(
+progettoit.fgm.teamup.model.Progetto¿
+¼
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java# (+(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%2*
+1*¬
+1z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (!„
+
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (!2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
+progettoRepositoryþû
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (0"
+%1it.fgm.teamup.model.Progetto"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository**
+(
+progettoit.fgm.teamup.model.Progetto2save(Ljava/lang/Object;)"¢
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (1$
+"
+%1it.fgm.teamup.model.Progetto:(
+progettoit.fgm.teamup.model.ProgettoB1/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl

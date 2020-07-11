@@ -3,6 +3,7 @@ package it.fgm.teamup.controllers;
 
 import it.fgm.teamup.model.*;
 import it.fgm.teamup.repository.*;
+import it.fgm.teamup.services.IAttivitàService;
 import it.fgm.teamup.services.IProgettoService;
 import it.fgm.teamup.services.IUtenteService;
 import org.hibernate.Session;
@@ -18,12 +19,16 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.Serializable;
 import java.util.List;
-import java.util.Locale;
 
 @Controller
 public class GestoreProgettoController {
+
+
+    @Autowired
+    IAttivitàService attivitàService;
+
+
     @Autowired
     IUtenteRepository utenteRepository;
     @Autowired
@@ -36,7 +41,11 @@ public class GestoreProgettoController {
     IUtenteService utenteService;
     @Autowired
     ISessioneRepository sessioneRepository;
+
+
     IProgettoService progettoService;
+
+    int progetto_id;
 
     @GetMapping("/cercaProgetti")
     public String getcercaProgetti(@ModelAttribute Progetto progetto, BindingResult result, Model model) {
@@ -105,7 +114,7 @@ public class GestoreProgettoController {
                 partecipazione.setUtente( utente );
                 partecipazione.setProgetto( progetto );
                 partecipazioneRepository.save( partecipazione );
-                return "homePage_progetti";
+                return "homePageLeader";
             } else {
                 modelMap.put( "failed", "Add Project Failed" );
                 return "redirect:progetto?error";
@@ -122,20 +131,18 @@ public class GestoreProgettoController {
     @PostMapping("/nuovaAttività")
     public String newAttivita(
             @ModelAttribute Attivita attivita,
-            Progetto progetto,
             HttpSession session,
             ModelMap modelMap,
             Sessione sessione) {
-
         sessione.setId( session.getId() );
         if (sessioneRepository.findById( sessione.getId() ) != null) {
             Sessione s = sessioneRepository.findById( sessione.getId() );
+          Progetto  progetto = progettoRepository.findById( progetto_id );
+          System.out.println(progetto_id);
             Utente utente = s.getUtente();
             Partecipazione partecipazione = partecipazioneRepository.findByUtenteId( utente.getId() );
-            progetto = progettoRepository.findByTitolo( progetto.getTitolo() );
 
-
-            try {
+           try {
                 session.getAttribute( "attivita" );
             } catch (Exception e) {
                 e.printStackTrace();
@@ -143,18 +150,19 @@ public class GestoreProgettoController {
 
             if (attivita != null) {
                 session.setAttribute( "attività", attivita );
-
+                attivita.setProgetto( progetto );
                 attivita.setObiettivi( attivita.getObiettivi() );
                 attivita.setPercentualeCompletamento( attivita.getPercentualeCompletamento() );
                 System.out.println( attivita.getId() );
                 attivitàRepository.save( attivita );
                 System.out.println( attivita.getObiettivi() );
-                return "singoloprog";
             } else {
                 modelMap.put( "failed", "Add Project Failed" );
                 return "redirect:/progetto?error";
             }
         }
+
+        modelMap.addAttribute( "progetto", progettoRepository.findById( progetto_id ) );
         return "singoloprog";
     }
 
@@ -167,43 +175,54 @@ public class GestoreProgettoController {
             model.addAttribute( "attività", attivita );
             return "nuovaAttività";
         } else {
-            return "nuovaAttività:?error";
+            return "redirect:/nuovaAttività";
         }
     }
 
     @GetMapping("/modificaAttività/{id}")
-    public String updateAttivita(@PathVariable("id") int id,
+    public ModelAndView updateAttivita(@PathVariable("id") int id,
                                  Model model
     ) {
-        Attivita attivita = attivitàRepository.findById( id );
-        model.addAttribute( "attività", attivita );
-        return "modificaAttività";
+        ModelAndView mav = new ModelAndView();
+        mav.addObject( "attivita", attivitàRepository.findById( id ) );
+        mav.setViewName( "modificaAttività" );
+        return mav;
+        //model.addAttribute( "attivita", attivita );
+
     }
 
     @PostMapping("/modificaAttività/{id}")
     public String postupdateAttivita(@PathVariable("id") int id,
                                      Attivita attivita,
                                      BindingResult result, Model model) {
-        if (result.hasErrors()) {
-            attivita.setId( id );
-            return "modificaAttivitò";
+
+        if (result.hasErrors()){
+            return "redirect:/modificaAttività";
         }
 
-        attivitàRepository.save( attivita );
+        //attivita = attivitàRepository.findById( id );
+        String a = attivita.getPercentualeCompletamento();
+        System.out.println(a);
+        System.out.println(id);
+        attivitàService.save(a, id );
+        //  attivitàRepository.save( attivita );
 
-        return "redirect:/singoloprog";
+        //model.addAttribute( "progetto", progettoRepository.findById( progetto_id ) );
+        model.addAttribute( "attivita", attivita );
+
+        return "homePage_progetti";
     }
-
 
     @GetMapping("/visualizzap")
     public String visualizzaProgetti(
             @ModelAttribute Progetto progetto,
             Model model) {
-
         model.addAttribute( "progetto", progettoRepository.findAll() );
-
         return "visualizzap";
     }
+
+
+
 
     @GetMapping("singoloprog/{id}")
     public String getSingoloprog(@PathVariable("id") int id, ModelMap model,
@@ -212,7 +231,12 @@ public class GestoreProgettoController {
                                  HttpServletRequest request,
                                  HttpSession session) {
 
+
         model.addAttribute( "progetto", progettoRepository.findById( id ) );
+
+        model.addAttribute( "attivita", attivitàRepository.findAllByProgettoId(id) );
+
+       progetto_id = id;
 
 
         return "singoloprog";
@@ -223,6 +247,7 @@ public class GestoreProgettoController {
                                   ModelMap modelMap,
                                   @ModelAttribute Progetto progetto,
                                   HttpSession session) {
+
 
         progetto = progettoRepository.findById( id );
 
@@ -271,6 +296,13 @@ public class GestoreProgettoController {
                 return "redirect:singoloprog:?error";
             }
 */
+
+   /* @GetMapping("/listaProgetti")
+    public String listaProgetti(@ModelAttribute Progetto progetto){
+
+
+    }*/
+
 
     @GetMapping("/listaRichieste")
     public String listaRichieste(@ModelAttribute Partecipazione partecipazione,
@@ -392,10 +424,14 @@ public class GestoreProgettoController {
             progetto.setId( id );
             return "update-prog";
         }
+        String p = progetto.getDescrizione();
+        System.out.println(p);
+        System.out.println(progetto_id);
+        utenteService.saveProg( p, progetto_id );
 
-        progettoRepository.save( progetto );
+        model.addAttribute( "progetto", progetto );
 
-        return "redirect:/visualizzap";
+        return "modificaCompletata";
     }
 
     @GetMapping("/delete/{id}")
@@ -509,31 +545,54 @@ public class GestoreProgettoController {
         if (sessioneRepository.findById( sessione.getId() ) != null) {
             System.out.println( "ciao1" );
             Sessione s = sessioneRepository.findById( sessione.getId() );
-
             Utente u = utenteRepository.findById( id );
             model.addAttribute( "utente", u );
         }
         return "profilo";
     }
 
-    @GetMapping("/modProf/{id}")
+    @GetMapping("/updateProfilo/{id}")
     public ModelAndView showUpdateFormUser(@PathVariable("id") int id, Model model, HttpSession session) {
         ModelAndView mav = new ModelAndView();
         mav.addObject( "utente", utenteRepository.findById( id ) );
-        mav.setViewName( "modprof" );
+        mav.setViewName( "updateProfilo" );
         return mav;
     }
 
-    @PostMapping("/modProf/{id}")
+    @PostMapping("/updateProfilo/{id}")
     public ModelAndView updateUtente(@PathVariable("id") int id,
                               @Validated Utente utente,
                                BindingResult result,
                                ModelAndView model,
                                HttpSession session) {
 
-        utenteService.salva( utente );
+        utenteService.salva( utente.getDescrizione(),id );
         return new ModelAndView("redirect:/profilo");
     }
+
+
+    @RequestMapping(path = "/admin" , method = RequestMethod.GET)
+    public ModelAndView visualizzaEntità(
+
+            @ModelAttribute("utente") Utente utente,
+            Model model, HttpSession session)
+    {
+        ModelAndView mav = new ModelAndView();
+
+        List<Progetto>  progetto = progettoRepository.getprogetti();
+
+        mav.addObject( "progetto",progetto );
+        mav.setViewName( "admin" );
+
+
+     //   model.addAttribute( "progetto", progettoRepository.findAll() );
+       // model.addAttribute( "utente" , utenteRepository.findAll());
+        return mav;
+    }
+
+
+
+
 }
 
 

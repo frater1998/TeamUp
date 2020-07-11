@@ -1,0 +1,107 @@
+
+³it.fgm.teamup.controllers.GestoreProgettoController#creaProgetto(Lit/fgm/teamup/model/Progetto;Lorg/springframework/ui/ModelMap;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaJ J("startingBlock*Ú	
+2€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaO O(ÈÅ
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaO* O(2"
+%1it.fgm.teamup.model.Progetto"it.fgm.teamup.model.ProgettoÚ
+×
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaO& O(4
+%2"&it.fgm.teamup.model.Progetto#<init>()V*$
+"
+%1it.fgm.teamup.model.Progetto‹
+ˆ
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaO O(6
+%3java.lang.Object"__mapSet*-
++
+modelMaporg.springframework.ui.ModelMap*
+
+progetto*$
+"
+%1it.fgm.teamup.model.Progetto‡
+„
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaP P(
+%4"template!progetto*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*-
++
+modelMaporg.springframework.ui.ModelMap"‘
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaP P(
+
+progetto*Ù
+3€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaN N(È
+Å
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaN N(.
+%0java.lang.Object"__mapGet*
+
+%jsp_context*
+
+progetto*
+2
+1*ü
+startingBlock€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaJ L(3ü
+ù
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaI I(
+%6"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping**
+(
+progettoit.fgm.teamup.model.Progetto€
+ý
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaJ J(.
+%7"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute**
+(
+progettoit.fgm.teamup.model.ProgettoÎ
+Ë
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaJ8 J(@(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%6*
+
+%7ý
+ú
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaI I(
+%8"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*+
+)
+sessionjavax.servlet.http.HttpSessionÇ
+Ä
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaL+ L(2)
+sessionjavax.servlet.http.HttpSession"__annotation*
+
+%8ÅÂ
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaK K(1+
+modelMaporg.springframework.ui.ModelMap"java.lang.Object*
+3*²
+1€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaR R($Ž
+‹
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaR R($
+%5"template!progetto:?error*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*-
++
+modelMaporg.springframework.ui.ModelMap"˜
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaR R(%
+progetto:?error:(
+progettoit.fgm.teamup.model.Progetto:+
+modelMaporg.springframework.ui.ModelMap:)
+sessionjavax.servlet.http.HttpSessionB75
+3it.fgm.teamup.controllers.GestoreProgettoController

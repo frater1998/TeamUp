@@ -4,6 +4,7 @@ package it.fgm.teamup.serviceimpl;
 import it.fgm.teamup.model.Partecipazione;
 import it.fgm.teamup.model.Progetto;
 import it.fgm.teamup.model.Utente;
+import it.fgm.teamup.repository.IProgettoRepository;
 import it.fgm.teamup.repository.IUtenteRepository;
 import it.fgm.teamup.services.IUtenteService;
 import org.hibernate.Session;
@@ -22,7 +23,11 @@ public class UtenteServiceImpl  implements IUtenteService {
 
     @Autowired            //code injection!
     private IUtenteRepository utenteRepository;
+    @Autowired
     private IUtenteService utenteService;
+
+    @Autowired
+    IProgettoRepository progettoRepository;
 
     SessionFactory sessionFactory;
 
@@ -32,10 +37,18 @@ public class UtenteServiceImpl  implements IUtenteService {
 
     @Override
     @Transactional        //da utilizzare durante le transazioni con il db
-    public Utente salva(Utente utente) {
+    public Utente salva(String descrizione, int id) {
 
-
+        Utente utente = utenteRepository.findById( id );
+        utente.setDescrizione( descrizione );
         return utenteRepository.save(utente);
+    }
+
+    @Override
+    public Progetto saveProg(String descr, int id) {
+        Progetto progetto = progettoRepository.findById( id );
+        progetto.setDescrizione( descr );
+        return progettoRepository.save(progetto);
     }
 
 

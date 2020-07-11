@@ -1,0 +1,83 @@
+
+it.fgm.teamup.controllers.HomeController#home(Lorg/springframework/ui/Model;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ("startingBlock*ß
+2u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((™ß
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (&
+%1java.util.ArrayList"java.util.ArrayListº
+π
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((
+%2"java.util.ArrayList#<init>()V*
+
+%1java.util.ArrayListπ
+∂
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((
+messagesjava.util.List"__id*
+
+%1java.util.ArrayList*
+1*¸
+3u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java/ (6æ
+ª
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java/ (S
+%0java.lang.Object"__mapGet*
+
+%jsp_context*
+
+MY_SESSION∂
+≥
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (T
+messagesjava.util.List"__id*
+
+%0java.lang.Object*
+2
+1*Û
+startingBlocku
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (8Ò
+Ó
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (
+%5"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*+
+)
+sessionjavax.servlet.http.HttpSessionª
+∏
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java0 (7)
+sessionjavax.servlet.http.HttpSession"__annotation*
+
+%5≥∞
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (#%
+modelorg.springframework.ui.Model"java.lang.Object*
+3*
+1u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (Ñ
+Å
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (9"
+%3org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+sessionMessages*
+
+messagesjava.util.ListÁ
+‰
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java! !(
+%4"template!index*,"*
+(it.fgm.teamup.controllers.HomeController*'
+%
+modelorg.springframework.ui.Model"Ç
+u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java! !(	
+index:%
+modelorg.springframework.ui.Model:)
+sessionjavax.servlet.http.HttpSessionB,*
+(it.fgm.teamup.controllers.HomeController

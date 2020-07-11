@@ -22,7 +22,7 @@ public interface PartecipazioneRepository extends JpaRepository<Partecipazione, 
     List<Partecipazione> findByPartecipazione_confermataIsFalse(boolean pc);
 
     @Query("select p from Partecipazione p where p.partecipazione_confermata = true and " +
-            "p.ruolo = 'TEAM-MATE' and p.utente = :utente")
+            "  p.utente = :utente")
     List<Partecipazione> findByPartecipazione_confermataIsTrue(Utente utente);
 
     @Query("SELECT p from Partecipazione p " +

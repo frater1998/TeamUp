@@ -1,0 +1,58 @@
+
+„it.fgm.teamup.serviceimpl.UtenteServiceImpl#findByEmailAndPassword(Ljava/lang/String;Ljava/lang/String;)Lit/fgm/teamup/model/Utente;x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java? ?(("startingBlock*„
+startingBlockx
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java?( ?(GÄ
+Á
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java> >(
+%2"
+__annotate*
+java.lang.Override*
+
+emailjava.lang.String®
+«
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java?0 ?(5
+emailjava.lang.String"__annotation*
+
+%2Ç
+Ä
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java> >(
+%3"
+__annotate*
+java.lang.Override*
+
+passwordjava.lang.String±
+®
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java?> ?(F
+passwordjava.lang.String"__annotation*
+
+%3*
+1*ô
+1x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.javaB B(ü
+ù
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.javaB B(0
+%0*it.fgm.teamup.repository.IUtenteRepository"__id*E*C-
++it.fgm.teamup.serviceimpl.UtenteServiceImpl"
+utenteRepositoryÔÑ
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.javaB B(H 
+%1it.fgm.teamup.model.Utente"ƒit.fgm.teamup.repository.IUtenteRepository#findByEmailAndPassword(Ljava/lang/String;Ljava/lang/String;)Lit/fgm/teamup/model/Utente;*2
+0
+%0*it.fgm.teamup.repository.IUtenteRepository*
+
+emailjava.lang.String*
+
+passwordjava.lang.String2<findByEmailAndPassword(Ljava/lang/String;Ljava/lang/String;)"ž
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.javaB B(I"
+ 
+%1it.fgm.teamup.model.Utente:
+emailjava.lang.String:
+passwordjava.lang.StringB/-
++it.fgm.teamup.serviceimpl.UtenteServiceImpl

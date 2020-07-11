@@ -1,0 +1,41 @@
+
+pit.fgm.teamup.serviceimpl.SessioneServiceImpl#save(Lit/fgm/teamup/model/Sessione;)Lit/fgm/teamup/model/Sessione;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java ("startingBlock*™
+startingBlockz
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (,’
+“
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (
+%2"
+__annotate*
+java.lang.Override**
+(
+sessioneit.fgm.teamup.model.Sessioneø
+º
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java# (+(
+sessioneit.fgm.teamup.model.Sessione"__annotation*
+
+%2*
+1*¨
+1z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (!Ñ
+Å
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (!2
+%0,it.fgm.teamup.repository.ISessioneRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.SessioneServiceImpl"
+sessioneRepository˛˚
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (2"
+%1it.fgm.teamup.model.Sessione"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*4
+2
+%0,it.fgm.teamup.repository.ISessioneRepository**
+(
+sessioneit.fgm.teamup.model.Sessione2save(Ljava/lang/Object;)"¢
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/SessioneServiceImpl.java (3$
+"
+%1it.fgm.teamup.model.Sessione:(
+sessioneit.fgm.teamup.model.SessioneB1/
+-it.fgm.teamup.serviceimpl.SessioneServiceImpl

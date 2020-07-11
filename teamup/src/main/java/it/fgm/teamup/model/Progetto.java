@@ -22,6 +22,7 @@ public class Progetto {
         return partecipazione;
     }
 
+
     public void setPartecipazione(List<Partecipazione> partecipazione) {
         this.partecipazione = partecipazione;
     }

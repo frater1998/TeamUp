@@ -5,10 +5,13 @@ import it.fgm.teamup.model.Progetto;
 import it.fgm.teamup.model.Utente;
 
 import javax.servlet.http.HttpSession;
+import java.io.Serializable;
 import java.util.List;
 
 public interface IUtenteService {
-    public Utente salva(Utente utente);
+    public Utente salva(String descrizione , int id);
+
+    Progetto saveProg(String descr, int id);
 
     public void creaPartecipazioneL(Utente utente, Progetto progetto, Partecipazione partecipazione);
     public Utente findByEmailAndPassword(String email, String password);

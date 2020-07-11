@@ -1,16 +1,16 @@
 
-X	java:S125>"<This block of commented-out lines of code should be removed.(£±“à8©ÔÛ±­.
-X	java:S125D"<This block of commented-out lines of code should be removed.(×ô‘ÿ8‚¡»­.
-d
-java:S1192-"GDefine a constant instead of duplicating this literal "utente" 6 times.(†¦¤8©ÔÛ±­.
-E
-java:S1148M"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8•»»­.
-w
-java:S1104"UMake sessionId a static final constant or non-public and provide accessors if needed.(ƒ¸ÀÓýÿÿÿÿ8†Ìª»­.
-J
-java:S1481B"(Remove this unused "ses" local variable.(·ËÔÕøÿÿÿÿ8ê±§½­.
-]	java:S125K"<This block of commented-out lines of code should be removed.( Ãùÿÿÿÿ8—®Š»­.
-Y
-java:S1854B"7Remove this useless assignment to local variable "ses".(·ËÔÕøÿÿÿÿ8ê±§½­.
 P
 java:S1121H".Extract the assignment out of this expression.(â“Ãñýÿÿÿÿ8ô­û¼­.
+X	java:S125>"<This block of commented-out lines of code should be removed.(£±“à8©ÔÛ±­.
+]	java:S125K"<This block of commented-out lines of code should be removed.( Ãùÿÿÿÿ8—®Š»­.
+d
+java:S1192-"GDefine a constant instead of duplicating this literal "utente" 6 times.(†¦¤8©ÔÛ±­.
+J
+java:S1481B"(Remove this unused "ses" local variable.(·ËÔÕøÿÿÿÿ8ê±§½­.
+^
+java:S2441R"<Make "Utente" serializable or don't store it in the session.(á³¢Åúÿÿÿÿ8³²íÂ³.
+w
+java:S1104"UMake sessionId a static final constant or non-public and provide accessors if needed.(ƒ¸ÀÓýÿÿÿÿ8†Ìª»­.
+X	java:S125D"<This block of commented-out lines of code should be removed.(×ô‘ÿ8‚¡»­.
+E
+java:S1148M"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8•»»­.

@@ -1,0 +1,23 @@
+
+iit.fgm.teamup.serviceimpl.PartecipazioneServiceImpl#findByUtenteId(I)Lit/fgm/teamup/model/Partecipazione;€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java   (("1*É
+1€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !('œ
+™
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !('7
+%01it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl"
+partecipazioneRepositoryïì
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !(<(
+%1"it.fgm.teamup.model.Partecipazione"git.fgm.teamup.repository.PartecipazioneRepository#findByUtenteId(I)Lit/fgm/teamup/model/Partecipazione;*9
+7
+%01it.fgm.teamup.repository.PartecipazioneRepository*
+""2findByUtenteId(I)"¯
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !(=*
+(
+%1"it.fgm.teamup.model.Partecipazione:
+""B75
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl

@@ -1,0 +1,77 @@
+
+mit.fgm.teamup.controllers.GestoreProgettoController#delete(ILorg/springframework/ui/Model;)Ljava/lang/String;Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∞ ∞("startingBlock*›
+startingBlockÇ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∞ ∞(A¡æ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∞5 ∞(@%
+modelorg.springframework.ui.Model"java.lang.Object*
+1*ø
+1Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java± ±(.ì
+ê
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java± ±(.2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepositoryœÃ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java± ±(="
+%1it.fgm.teamup.model.Progetto"Vit.fgm.teamup.repository.IProgettoRepository#findById(I)Lit/fgm/teamup/model/Progetto;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository*
+""2findById(I)ﬁ
+€
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java± ±(>(
+progettoit.fgm.teamup.model.Progetto"__id*$
+"
+%1it.fgm.teamup.model.Progettoì
+ê
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≤ ≤(2
+%2,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepository‚ﬂ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≤ ≤(-
+
+%3void"Norg.springframework.data.repository.CrudRepository#delete(Ljava/lang/Object;)V*4
+2
+%2,it.fgm.teamup.repository.IProgettoRepository**
+(
+progettoit.fgm.teamup.model.Progetto2delete(Ljava/lang/Object;)ì
+ê
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≥( ≥(:2
+%4,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepository∞≠
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≥( ≥(D
+%5java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*4
+2
+%4,it.fgm.teamup.repository.IProgettoRepository2	findAll()Ö
+Ç
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≥ ≥(F"
+%6org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+
+progetto*
+
+%5java.util.ListÜ
+É
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¥ ¥(
+%7"template!visualizzap*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*'
+%
+modelorg.springframework.ui.Model"ñ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¥ ¥(
+visualizzap:
+"":%
+modelorg.springframework.ui.ModelB75
+3it.fgm.teamup.controllers.GestoreProgettoController

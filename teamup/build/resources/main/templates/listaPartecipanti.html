@@ -19,7 +19,7 @@
         <p class="card-text" style="margin-left: 20px">
         <td th:text="${partecipazione.ruolo}"></td>
         </p>
-        <a th:href="@{/profiloUtente/{id}(id=${partecipazione.utente.id})}" class="card-link" style="margin-left: 20px">Visualizza Profilo</a>
+        <a th:href="@{/profilo/{id}(id=${partecipazione.utente.id})}" class="card-link" style="margin-left: 20px">Visualizza Profilo</a>
 
     </div>
 </div>

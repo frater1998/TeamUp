@@ -19,7 +19,9 @@ public class AttivitaServiceImpl  implements IAttivitàService {
 
     @Override
     @Transactional        //da utilizzare durante le transazioni con il db
-    public Attivita save(Attivita attivita) {
+    public Attivita save(String percentuale ,  int id) {
+        Attivita attivita = attivitaRepository.findById( id );
+        attivita.setPercentualeCompletamento( percentuale );
         return attivitaRepository.save(attivita);
     }
 

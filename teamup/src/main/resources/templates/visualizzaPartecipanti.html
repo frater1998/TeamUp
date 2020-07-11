@@ -23,7 +23,7 @@
             <p class="card-text" style="margin-left: 20px">
             <td th:text="${partecipazione.ruolo}"></td>
             </p>
-            <a th:href="@{/profiloUtente/{id}(id=${partecipazione.utente.id})}" class="card-link" style="margin-left: 20px">Visualizza Profilo</a>
+            <a th:href="@{/profilo/{id}(id=${partecipazione.utente.id})}" class="card-link" style="margin-left: 20px">Visualizza Profilo</a>
             <a th:href="@{/deleteUser/{id}(id=${partecipazione.id})}"
             class="btn btn-primary" style="color: white; background-color: red; margin-left: 150px">Elimina teammate</a>
         </div>

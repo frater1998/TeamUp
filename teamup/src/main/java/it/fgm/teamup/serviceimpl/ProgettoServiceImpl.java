@@ -19,8 +19,10 @@ public class ProgettoServiceImpl implements IProgettoService{
     IProgettoRepository progettoRepository;
 
 
-    @Transactional        //da utilizzare durante le transazioni con il db
-    public Progetto salva(Progetto progetto) {
+        //da utilizzare durante le transazioni con il db
+    public Progetto salva(String descr, int id) {
+        Progetto progetto = progettoRepository.findById( id );
+        progetto.setDescrizione( descr );
         return progettoRepository.save(progetto);
     }
 

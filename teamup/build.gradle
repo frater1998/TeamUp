@@ -48,6 +48,6 @@ sonarqube {
 		property "sonar.projectKey", "frater1998_TeamUp"
 		property "sonar.organization", "cicerone"
 		property "sonar.host.url", "https://sonarcloud.io"
-		property "sonar.login", "b92250188a1cc5eccdae5d3d7bcbd6c1a0a8940a"
+		property "sonar.login", "e9fbab60e525e75b55734cf08a85fc37aea546fc"
 	}
 }

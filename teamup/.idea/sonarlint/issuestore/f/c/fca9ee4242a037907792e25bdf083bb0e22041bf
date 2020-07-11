@@ -1,22 +1,0 @@
-
-R
-java:S1854B"5Remove this useless assignment to local variable "s".(ë“¿é8¸üáğ².
-[
-java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8æÂáğ².
-_
-java:S1128"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8ıãİïª.
-T
-java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8¸üáğ².
-d
-java:S1128"BRemove this unused import 'it.fgm.teamup.services.IUtenteService'.(ÄÇ¶ˆùÿÿÿÿ8˜è¶ğ².
-k
-java:S1128"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶¸ùÿÿÿÿ8ıãİïª.
-X	java:S125E"<This block of commented-out lines of code should be removed.(£±“à8ƒ®àğ².
-C
-java:S1481B"&Remove this unused "s" local variable.(ë“¿é8¸üáğ².
-[
-java:S1128"9Remove this unused import 'it.fgm.teamup.model.Progetto'.(Ù˜ã„ıÿÿÿÿ8æÂáğ².
-h
-java:S1192"FDefine a constant instead of duplicating this literal "admin" 5 times.(™Ó¬ûÿÿÿÿ8éÇğ².
-{
-java:S1128"YRemove this unused import 'org.springframework.boot.autoconfigure.kafka.KafkaProperties'.(´ÖĞÄùÿÿÿÿ8À¯Ûïª.

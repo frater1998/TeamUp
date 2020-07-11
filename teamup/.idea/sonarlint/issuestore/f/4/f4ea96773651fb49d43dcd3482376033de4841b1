@@ -1,9 +1,12 @@
 
-d
-java:S1128"BRemove this unused import 'it.fgm.teamup.services.IUtenteService'.(ÄÇ¶ˆùÿÿÿÿ8‘Éœ½ª.
-d
-java:S1128"GRemove this unused import 'it.fgm.teamup.repository.IUtenteRepository'.(¬ÙÕ‚8¨Üœ½ª.
 M
 java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¿ƒ¯éª.
+w
+java:S1128
+"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ðùçøùÿÿÿÿ8ãÌ²Ë³.
 Y
 java:S1128"7Remove this unused import 'it.fgm.teamup.model.Utente'.(îã”‹ûÿÿÿÿ8×Æ¢½ª.
+d
+java:S1128"GRemove this unused import 'it.fgm.teamup.repository.IUtenteRepository'.(¬ÙÕ‚8¨Üœ½ª.
+d
+java:S1128"BRemove this unused import 'it.fgm.teamup.services.IUtenteService'.(ÄÇ¶ˆùÿÿÿÿ8‘Éœ½ª.

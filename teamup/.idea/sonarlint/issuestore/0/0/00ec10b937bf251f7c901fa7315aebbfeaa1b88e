@@ -1,9 +1,8 @@
 
-]	java:S125E"<This block of commented-out lines of code should be removed.(œÙ¯Œûÿÿÿÿ8š…‡·­.
-X
-java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8ûŞ—Š­.
-S
-java:S1068"1Remove this unused "utenteService" private field.(¥ÄÑ™ûÿÿÿÿ8›ñ–‰­.
-]	java:S125X"<This block of commented-out lines of code should be removed.(öşåøÿÿÿÿ8›ñ–‰­.
 T
-java:S1128	"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8î¹¹Ò².
+java:S1128
+"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8î¹¹Ò².
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8ûŞ—Š­.
+]	java:S125R"<This block of commented-out lines of code should be removed.(œÙ¯Œûÿÿÿÿ8š…‡·­.
+]	java:S125e"<This block of commented-out lines of code should be removed.(öşåøÿÿÿÿ8›ñ–‰­.

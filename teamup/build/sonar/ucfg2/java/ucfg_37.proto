@@ -1,0 +1,21 @@
+
+Fit.fgm.teamup.serviceimpl.ProgettoServiceImpl#getAll()Ljava/util/List;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java( (("1*«
+1z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java) )("Ñ
+Å
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java) )("2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
+progettoRepositoryß§
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java) )(,
+%1java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository2	findAll()"î
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java) )(-
+
+%1java.util.ListB1/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl

@@ -1,0 +1,41 @@
+
+ƒit.fgm.teamup.serviceimpl.PartecipazioneServiceImpl#salva(Lit/fgm/teamup/model/Partecipazione;)Lit/fgm/teamup/model/Partecipazione;€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java ("startingBlock*ý
+startingBlock€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java (>Ž
+‹
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java (
+%2"
+__annotate*<:
+8org.springframework.transaction.annotation.Transactional*6
+4
+partecipazione"it.fgm.teamup.model.PartecipazioneÒ
+Ï
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java/ (=4
+partecipazione"it.fgm.teamup.model.Partecipazione"__annotation*
+
+%2*
+1*ö
+1€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java ('œ
+™
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java ('7
+%01it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl"
+partecipazioneRepositoryœ™
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java (<(
+%1"it.fgm.teamup.model.Partecipazione"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*9
+7
+%01it.fgm.teamup.repository.PartecipazioneRepository*6
+4
+partecipazione"it.fgm.teamup.model.Partecipazione2save(Ljava/lang/Object;)"¯
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java (=*
+(
+%1"it.fgm.teamup.model.Partecipazione:4
+partecipazione"it.fgm.teamup.model.PartecipazioneB75
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl

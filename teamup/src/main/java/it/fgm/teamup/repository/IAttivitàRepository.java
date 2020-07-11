@@ -9,12 +9,17 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Repository
 public interface IAttivitàRepository extends JpaRepository<Attivita,Integer> {
 
     Attivita findById(long id);
 
-    @Query
-    Attivita findByProgettoId(int id);
+    Attivita save(Attivita a);
+
+    @Query("select a from Attivita a where a.progetto.id = :id ")
+    List<Attivita> findAllByProgettoId(int id);
+
 }
 

@@ -50,14 +50,9 @@ public class Attivita {
 
     public String getPercentualeCompletamento() { return percentualeCompletamento; }
 
-    public void setPercentualeCompletamento(String percentualeCompletamento) { this.percentualeCompletamento = percentualeCompletamento; }
+    public void setPercentualeCompletamento(String percentualeCompletamento) {
+        this.percentualeCompletamento = percentualeCompletamento; }
 
-    public Date getDataInizio() { return dataInizio; }
 
-    public void setDataInizio(Date dataInizio) { this.dataInizio = dataInizio; }
-
-    public Date getDataFine() { return dataFine; }
-
-    public void setDataFine(Date dataFine) { this.dataFine = dataFine; }
 
 }

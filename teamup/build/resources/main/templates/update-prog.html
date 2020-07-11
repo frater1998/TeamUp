@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
+<form th:action="@{/update-prog/{id}(id=${progetto.id})}"
+      th:object="${progetto}"
+      method="post">
+<div style = "font-family: sans-serif; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size: 100%;  margin : 0; padding :0; box-sizing: border-box; list-style: none; ">
+    <p style="font-size: 12px">
+
+        <div class="wrapper" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; height: 100%; display: flex; box-shadow: 0 1px 20px 0 rgba(69 , 90 , 100 , 0.08)">
+            <div class = "left" style="width: 35%; background: linear-gradient(to right, #01a9ac, #01dbdf); padding: 30px 25px; border-top-left-radius : 5px; border-bottom-left-radius: 5px; text-align: center; color: #fff">
+
+                <img src="data:image/png;base64,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" alt="project" width="100" style="margin-bottom: 10px; border-radius: 5px ">
+                <h4 style="margin-bottom: 10px"> Titolo progetto :
+                    <span th:text=" ${progetto.titolo}"></span>
+                </h4>
+    <p style="font-size: 12px">
+    <textarea type="text" th:field="*{descrizione}" id="descrizione" placeholder="Descrizione"></textarea>
+    </p>
+    <div class="field is-grouped" style="position: absolute; top: 65%; left:18% ;  transform: translate(-50%,-50%)">
+        <div class="control">
+            <input type="submit" value="Salva"  class="button is-link" style="border: 1px solid #fff; padding: 10px 30px; color: black; text-decoration: none; background-color:  #01dbdf;
+            border-radius: 30px; font-size: 15px; margin: 10px 0;"
+            >
+        </div>
+        <div class="control">
+            <button onclick="goBack()" class="button is-link is-light" style= "border: 1px solid #fff; padding: 10px 30px; color: black; text-decoration: none; background-color:  #999999; border-radius: 30px; font-size: 15px; margin: 10px 0;">Annulla</button>
+        </div>
+    </div>
+
+</div>
+
+<div class = "right" style="width: 65%; background: #fff; border-top-right-radius: 5px; border-bottom-right-radius: 5px; padding: 30px 25px">
+    <div class = "info" style="margin-bottom: 25px">
+        <h3 style="margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #e0e0e0; color: #353c4e; text-transform: uppercase; letter-spacing: 5px">Informazioni</h3>
+        <div class = "button" style="position: absolute; top:12%; left:67%; transform: translate(-50%,-50%)">
+            <a th:href="@{/nuovaAttività}" class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; margin-left: 100px; height: 50px">Aggiungi attività</a>
+        </div>
+        <div class = "button" style="position: absolute; top:12%; left:85%; transform: translate(-50%,-50%)">
+            <a th:href="@{/listaPartecipanti/{id}(id=${progetto.id})}"
+               class="btn" style="border: 1px solid #fff; padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px; ">Lista partecipanti</a>
+        </div>
+        <div class="info_data" style="display: flex; justify-content: space-between">
+            <div class="data" style="width: 45%">
+                <h4 style="color: #353c4e; margin-bottom: 5px;">Categoria</h4>
+                <p style="font-size: 13px; margin-bottom: 10px; color: #919aa3">
+                    <span th:text=" ${progetto.categoria}"></span>
+                </p>
+            </div>
+        </div>
+        <tr th:each="attivita : ${attivita}">
+            <div class="card" style="background-color: black; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
+                <div class="card-header" style = "color: white">
+                    Attività
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style = "color: white"><span th:text="'Completato:' + ${attivita.percentualeCompletamento}"></span></h5>
+                    <p class="card-text" style = "color: white"><span th:text="${attivita.obiettivi}"></span></p>
+                    <a th:href="@{/modificaAttività/{id}(id=${attivita.id})}" class="btn btn-primary" style = "color: steelblue">Modifica Attività</a>
+                </div>
+            </div>
+        </tr>
+    </div>
+</div>
+</div>
+</div>
+
+<!--
 <form action="#"
       th:action="@{/update-prog/{id}(id=${progetto.id})}"
       th:object="${progetto}"
@@ -19,6 +85,9 @@
     <input type="text" th:field="*{descrizione}" id="descrizione" placeholder="Descrizione">
     <span th:if="${#fields.hasErrors('descrizione')}" th:errors="*{descrizione}"></span>
     <input type="submit" value="Update Progetto">
+
+</form>
+-->
 </form>
 </body>
 </html>

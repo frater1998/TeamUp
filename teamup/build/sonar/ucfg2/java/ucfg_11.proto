@@ -1,0 +1,108 @@
+
+·it.fgm.teamup.controllers.GestoreProgettoController#postSingoloprog(ILorg/springframework/ui/ModelMap;Lit/fgm/teamup/model/Progetto;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaô ô(!"startingBlock*Œ
+startingBlock‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaô! ÷(6ÿ
+ü
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaó ó($
+%7"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping**
+(
+progettoit.fgm.teamup.model.Progetto‚
+ÿ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaö" ö(1
+%8"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute**
+(
+progettoit.fgm.teamup.model.ProgettoĞ
+Í
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaö; ö(C(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%7*
+
+%8€
+ı
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaó ó($
+%9"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*+
+)
+sessionjavax.servlet.http.HttpSessionÉ
+Æ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java÷. ÷(5)
+sessionjavax.servlet.http.HttpSession"__annotation*
+
+%9ÇÄ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaõ" õ(4+
+modelMaporg.springframework.ui.ModelMap"java.lang.Object*
+1*¹
+1‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaú ú(%“
+
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaú ú(%2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepositoryÏÌ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaú ú(4"
+%1it.fgm.teamup.model.Progetto"Vit.fgm.teamup.repository.IProgettoRepository#findById(I)Lit/fgm/teamup/model/Progetto;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository*
+""2findById(I)Ş
+Û
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaú ú(4(
+progettoit.fgm.teamup.model.Progetto"__id*$
+"
+%1it.fgm.teamup.model.ProgettoŸœ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaü! ü(:
+%2java.lang.String"?it.fgm.teamup.model.Progetto#getDescrizione()Ljava/lang/String;**
+(
+progettoit.fgm.teamup.model.Progetto2getDescrizione()À½
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaü ü(<
+
+%3void"@it.fgm.teamup.model.Progetto#setDescrizione(Ljava/lang/String;)V**
+(
+progettoit.fgm.teamup.model.Progetto*
+
+%2java.lang.String2"setDescrizione(Ljava/lang/String;)•’
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaı ı(0
+%4java.lang.String":it.fgm.teamup.model.Progetto#getTitolo()Ljava/lang/String;**
+(
+progettoit.fgm.teamup.model.Progetto2getTitolo()¶³
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaı ı(2
+
+%5void";it.fgm.teamup.model.Progetto#setTitolo(Ljava/lang/String;)V**
+(
+progettoit.fgm.teamup.model.Progetto*
+
+%4java.lang.String2setTitolo(Ljava/lang/String;)‘
+
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÿ ÿ(!
+%6"template!singoloprog/{id}*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*-
++
+modelMaporg.springframework.ui.ModelMap"›
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÿ ÿ("
+singoloprog/{id}:
+"":+
+modelMaporg.springframework.ui.ModelMap:(
+progettoit.fgm.teamup.model.Progetto:)
+sessionjavax.servlet.http.HttpSessionB75
+3it.fgm.teamup.controllers.GestoreProgettoController

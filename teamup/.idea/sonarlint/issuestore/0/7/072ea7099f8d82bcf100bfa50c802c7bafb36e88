@@ -1,10 +1,10 @@
 
 b	java:S107D"AConstructor has 8 parameters, which is greater than 7 authorized.(¯»ÛÚûÿÿÿÿ8â§ØÐ².
+L
+java:S1172E"/Remove this unused method parameter "username".(²„¯«8¡ÒØÐ².
 H
 java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8ŸÞ×Ð².
 7
-java:S1116="Remove this empty statement.(…ÀÆÇûÿÿÿÿ
-7
 java:S1116B"Remove this empty statement.(ôŸŽìúÿÿÿÿ
-L
-java:S1172E"/Remove this unused method parameter "username".(²„¯«8¡ÒØÐ².
+7
+java:S1116="Remove this empty statement.(…ÀÆÇûÿÿÿÿ

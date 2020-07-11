@@ -8,6 +8,6 @@ import org.springframework.data.repository.query.Param;
 public interface IAttivitàService {
 
 
-    Attivita save(Attivita attivita);
+    Attivita save(String percentuale, int id);
 
 }

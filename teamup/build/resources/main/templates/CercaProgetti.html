@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <title>CercaProgetti</title>
 </head>
 <body style = "margin: 0; padding: 0; font-family: 'Century Gothic'; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size : 100%">
     <ul style = "float: left; list-style-type: none; margin-top: 15px;">
-        <li style="display: inline-block"><a href = "homePage_progetti" style="text-decoration: none; color: steelblue; padding: 5px 20px; border: 1px solid #fff">vai alla home</a></li>
+        <li style="display: inline-block"><a onclick="goBack()" style="text-decoration: none; color: steelblue; padding: 5px 20px; border: 1px solid #fff">Torna indietro</a>
+        </li>
     </ul>
     <h1 style = "color:#ffffff; text-align: center">Seleziona la categoria</h1>
     <p></p>

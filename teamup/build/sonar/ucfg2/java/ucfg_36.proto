@@ -1,0 +1,41 @@
+
+lit.fgm.teamup.serviceimpl.ProgettoServiceImpl#findAllByCategoriaIsMusica(Ljava/lang/String;)Ljava/util/List;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java" "(4"startingBlock*”
+startingBlockz
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java"4 "(FÊ
+Ç
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java! !(
+%2"
+__annotate*
+java.lang.Override*
+
+	categoriajava.lang.String´
+±
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java"< "(E
+	categoriajava.lang.String"__annotation*
+
+%2*
+1*©
+1z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java# #(!„
+
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java# #(!2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
+progettoRepository‰†
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java# #(I
+%1java.util.List"kit.fgm.teamup.repository.IProgettoRepository#findAllByCategoriaIsMusica(Ljava/lang/String;)Ljava/util/List;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository*
+
+	categoriajava.lang.String2.findAllByCategoriaIsMusica(Ljava/lang/String;)"”
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java# #(J
+
+%1java.util.List:
+	categoriajava.lang.StringB1/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl

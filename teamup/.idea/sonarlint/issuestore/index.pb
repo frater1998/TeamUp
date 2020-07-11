@@ -13,8 +13,6 @@ p
 @src/main/java/it/fgm/teamup/serviceimpl/AttivitaServiceImpl.java,9\f\9fc460bbf16ed821d5921ddcb1b7e08a4ccdc249
 k
 ;src/main/java/it/fgm/teamup/services/IAttivitàService.java,b\5\b5a8ed4a252e51a9a554c6907ede768a22e41cde
-}
-Msrc/main/java/it/fgm/teamup/controllers/popup_richiestaInviataController.java,c\f\cf62b40d6061683193947f65db0fae7e6f055620
 p
 @src/main/java/it/fgm/teamup/repository/IAttivitàRepository.java,1\d\1d9d1c059e4d958549470b3bff59fb97be55207f
 p
@@ -23,22 +21,14 @@ j
 :src/main/java/it/fgm/teamup/services/IProgettoService.java,0\0\00aad3f56a7dbdd444f0652cabbef7f8bb49ef1e
 k
 ;src/main/java/it/fgm/teamup/controllers/HomeController.java,8\e\8e807b5430a0e5b35edb4b5ddbc5b669d477f436
-p
-@src/main/java/it/fgm/teamup/controllers/AttivitàController.java,d\a\da32b4428aca5af0348d80aa75bb618181cfcf07
 o
 ?src/main/java/it/fgm/teamup/repository/IProgettoRepository.java,4\a\4a67950201d9f864fd4eb52c0c7bc153a69ca7f0
 \
 ,src/main/java/it/fgm/teamup/model/Admin.java,3\7\3788ae511e705d8bcf9474fe5d682d57ea5f7fa9
-l
-<src/main/java/it/fgm/teamup/controllers/AdminController.java,f\c\fca9ee4242a037907792e25bdf083bb0e22041bf
 _
 /src/main/java/it/fgm/teamup/model/Progetto.java,6\6\661569a0178a8222f8c444a58605ab04d8410353
-_
-/src/main/java/it/fgm/teamup/model/Teammate.java,9\1\915fbd7f96184f8dbf8d8d9840387b32c41f36a2
 t
 Dsrc/main/java/it/fgm/teamup/repository/PartecipazioneRepository.java,a\c\ac5616e8f99a8d4644d9fec60d1d901c0247eab6
-u
-Esrc/main/java/it/fgm/teamup/controllers/PartecipazioneController.java,5\d\5d9e54883228fbf506aa29b6f2ebc61da6143cd3
 e
 5src/main/java/it/fgm/teamup/model/Partecipazione.java,a\e\aeca008ca0b88fc57e8716c583bbe8b09f511a01
 b
@@ -51,8 +41,6 @@ p
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 l
 <src/main/java/it/fgm/teamup/controllers/LoginController.java,e\e\ee8293cc71a444a7ac2b53fa86a5f1de13b1a84a
-c
-3src/main/java/it/fgm/teamup/dao/LoginUtenteDAO.java,a\9\a92ad3fe37852ce431848f8b5f51d1ef9e24073f
 _
 /src/main/java/it/fgm/teamup/model/Sessione.java,7\8\7852a38bbf45f849b0e0b64e58787186cf626a06
 j
@@ -67,5 +55,5 @@ t
 Dsrc/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java,7\2\7255cc441ef652e88de21f8d5a68a7f257bf9d90
 v
 Fsrc/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java,0\c\0ce995c25356f08a07b3893d0018fb1471ba7dac
-u
-Esrc/main/java/it/fgm/teamup/controllers/nuovaAttivitàController.java,c\f\cfddd1fab1608abecfe7845e25c253d71dc20040
+|
+Lsrc/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java,2\b\2bbf51a8b703aeb75b7cc3d32479cccb9864a48f

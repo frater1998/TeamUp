@@ -1,0 +1,100 @@
+
+Ûit.fgm.teamup.controllers.GestoreProgettoController#ListProg(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Lit/fgm/teamup/model/Progetto;Lorg/springframework/ui/Model;)Ljava/lang/String;‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¸ ¸("startingBlock*ò
+startingBlock‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¸ ¹(u†
+ƒ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java· ·(!
+%4"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*2
+0
+request%javax.servlet.http.HttpServletRequestÐ
+Í
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹ ¹(&0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%4ˆ
+…
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java· ·(!
+%5"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*4
+2
+response&javax.servlet.http.HttpServletResponseÒ
+Ï
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹< ¹(D2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%5þ
+û
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java· ·(!
+%6"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping**
+(
+progettoit.fgm.teamup.model.Progetto‚
+ÿ
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹F ¹(U
+%7"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute**
+(
+progettoit.fgm.teamup.model.ProgettoÐ
+Í
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹_ ¹(g(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%6*
+
+%7Á¾
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹i ¹(t%
+modelorg.springframework.ui.Model"java.lang.Object*
+1*ÿ
+
+1‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(“
+
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java»( »(:2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+progettoRepository°­
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java»( »(D
+%1java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository2	findAll()…
+‚
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(F"
+%2org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+
+progetto*
+
+%1java.util.Listˆ
+…
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java½ ½(
+%3"template!ListaProgetti*7"5
+3it.fgm.teamup.controllers.GestoreProgettoController*'
+%
+modelorg.springframework.ui.Model"˜
+‚
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java½ ½(
+ListaProgetti:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponse:(
+progettoit.fgm.teamup.model.Progetto:%
+modelorg.springframework.ui.ModelB75
+3it.fgm.teamup.controllers.GestoreProgettoController

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface IProgettoService {
 
-    public Progetto salva(Progetto progetto);
+    public Progetto salva(String descr, int id);
 
     public Progetto findById(int id) ;
 

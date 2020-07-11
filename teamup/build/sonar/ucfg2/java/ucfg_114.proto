@@ -1,0 +1,78 @@
+
+bit.fgm.teamup.serviceimpl.UtenteServiceImpl#salva(Ljava/lang/String;I)Lit/fgm/teamup/model/Utente;x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java# #("startingBlock*ç
+startingBlockx
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java# #(3 
+«
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java! !(
+%5"
+__annotate*
+java.lang.Override*!
+
+descrizionejava.lang.String
+Ì
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java" "(
+%6"
+__annotate*<:
+8org.springframework.transaction.annotation.Transactional*!
+
+descrizionejava.lang.Stringº
+π
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java# #(*
+descrizionejava.lang.String"__annotation*
+
+%5*
+
+%6*
+1*Û
+1x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java% %((¸
+˘
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java% %((0
+%0*it.fgm.teamup.repository.IUtenteRepository"__id*E*C-
++it.fgm.teamup.serviceimpl.UtenteServiceImpl"
+utenteRepositoryºπ
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java% %(7 
+%1it.fgm.teamup.model.Utente"Rit.fgm.teamup.repository.IUtenteRepository#findById(I)Lit/fgm/teamup/model/Utente;*2
+0
+%0*it.fgm.teamup.repository.IUtenteRepository*
+""2findById(I)Õ
+ 
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java% %(8$
+utenteit.fgm.teamup.model.Utente"__id*"
+ 
+%1it.fgm.teamup.model.Utente∏µ
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java& &(,
+
+%2void">it.fgm.teamup.model.Utente#setDescrizione(Ljava/lang/String;)V*&
+$
+utenteit.fgm.teamup.model.Utente*!
+
+descrizionejava.lang.String2"setDescrizione(Ljava/lang/String;)¸
+˘
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java' '(0
+%3*it.fgm.teamup.repository.IUtenteRepository"__id*E*C-
++it.fgm.teamup.serviceimpl.UtenteServiceImpl"
+utenteRepositoryäá
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java' '(, 
+%4it.fgm.teamup.model.Utente"iit.fgm.teamup.repository.IUtenteRepository#save(Lit/fgm/teamup/model/Utente;)Lit/fgm/teamup/model/Utente;*2
+0
+%3*it.fgm.teamup.repository.IUtenteRepository*&
+$
+utenteit.fgm.teamup.model.Utente2"save(Lit/fgm/teamup/model/Utente;)"û
+x
+nC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/UtenteServiceImpl.java' '(-"
+ 
+%4it.fgm.teamup.model.Utente:
+descrizionejava.lang.String:
+""B/-
++it.fgm.teamup.serviceimpl.UtenteServiceImpl

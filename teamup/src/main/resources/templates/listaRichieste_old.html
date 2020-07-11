@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+
+<html xmlns: xmlns:th="http://www.w3.org/1999/xhtml" th="http://thymeleaf.org">
+
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"/>
+</head>
+
+<body>
+<tr th:each="partecipazione : ${partecipazione}">
+
+    <div class="card" style="width: 30rem; background-color: white; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
+        <div class="card-body" >
+            <h5 class="card-title" style="margin-left: 20px">
+                <td th:text="${partecipazione.utente.nome} + ' ' + ${partecipazione.utente.cognome}"></td>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="margin-left: 20px"><td th:text="${partecipazione.utente.email}"></td></h6>
+            <p class="card-text" style="margin-left: 20px"><td th:text="${partecipazione.utente.descrizione}"></td></p>
+            <a  th:href="@{/confermaRichiesta/{id}(id=${partecipazione.id})}" class="btn btn-primary" style="color: white; background-color: #27ae60; margin-left: 20px">Accetta</a>
+            <a  th:href="@{/deleteRichiesta/{id}(id=${partecipazione.id})}"class="btn btn-primary" style="color: white; background-color: red; margin-left: 60px">Rifiuta</a>
+            <a  class="card-link" th:href="@{/profilo/{id}(id=${utente.id})}" style="margin-left: 150px">Visualizza Profilo</a>
+        </div>
+    </div>
+</tr>
+
+
+                <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+                <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

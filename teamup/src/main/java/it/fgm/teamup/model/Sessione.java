@@ -9,8 +9,6 @@ public class Sessione {
     @Id
     private String id;
 
-
-
     @OneToOne
     private Utente utente;
 

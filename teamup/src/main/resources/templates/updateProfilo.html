@@ -26,11 +26,15 @@
             <div class="control">
                 <input type="submit" value="Update Profilo"
                        class="button is-link" style = "color: #fff; background-color: #1c8adb; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">
-                    </input>
+
             </div>
             <div class="control">
-                <input type="cancel" class="button is-link is-light" style = "color: #fff; background-color: #919aa3; width: 100%; padding: 10px; border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none; cursor:pointer">
-                    Annulla</input>
+                <button th:href="@{profilo}"  value="Annulla"
+                       class="button is-link is-light" style = "color: #fff;
+                       background-color: #919aa3; width: 100%; padding: 10px;
+                       border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none;
+                       cursor:pointer; text-align: center" > Annulla </button>
+
             </div>
         </div>
         </p>

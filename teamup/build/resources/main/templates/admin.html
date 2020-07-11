@@ -4,16 +4,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>visualizzaEntità</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
 <div th:insert="~{fragments/navbar :: navbar}"></div>
-
-<div th:insert = "~{visualizzap :: visualizzap}"></div>
-
+<div th:insert="~{visualizzap :: visualizzap}"></div>
 
 <!--
-<div >
+<div>
     <div>
         <h2>Progetti:</h2>
         <table border="1">
@@ -32,18 +32,17 @@
                 <td th:text="${progetto.categoria}"></td>
                 <td th:text="${progetto.descrizione}"></td>
                 <td>
-                    <a class="delete" th:href="@{/update-prog/{id}(id=${progetto.id})}">
+                    <a class="update" th:href="@{/update-prog/{id}(id=${progetto.id})}">
                         <span class="icon">
                             <i class="far fa-edit"></i>
                         </span>
                     </a>
                 </td>
                 <td>
-                    <a  th:href="@{/delete/{id}(id=${progetto.id})}">
+                    <a  th:href="@{/deleteProgetto/{id}(id=${progetto.id})}">
                         <span class="icon" >
                             <i class="fas fa-minus-circle"></i>
                         </span>
-
                     </a>
                 </td>
             </tr>
@@ -51,7 +50,7 @@
         </table>
     </div>
     <div >
-        <div>
+        <div> -->
             <h2>Utenti:</h2>
             <table border="1">
                 <thead>
@@ -80,21 +79,19 @@
                         <span class="icon" >
                             <i class="fas fa-minus-circle"></i>
                         </span>
-
                         </a>
                     </td>
                 </tr>
                 </tbody>
-            </table> -->
+            </table>
 
-            <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-            <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-        </div>
-    </div>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</div>
+</div>
 </div>
 </div>
 </body>
+</html>
