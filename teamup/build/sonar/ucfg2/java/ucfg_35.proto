@@ -1,23 +1,21 @@
 
-Wit.fgm.teamup.serviceimpl.ProgettoServiceImpl#findById(I)Lit/fgm/teamup/model/Progetto;z
-pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java ("1*Ù
+Fit.fgm.teamup.serviceimpl.ProgettoServiceImpl#getAll()Ljava/util/List;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java* *("1*«
 1z
-pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (!Ñ
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java+ +("Ñ
 Å
 z
-pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (!2
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java+ +("2
 %0,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
 -it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
-progettoRepository∆√
+progettoRepositoryß§
 z
-pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (0"
-%1it.fgm.teamup.model.Progetto"Vit.fgm.teamup.repository.IProgettoRepository#findById(I)Lit/fgm/teamup/model/Progetto;*4
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java+ +(,
+%1java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*4
 2
-%0,it.fgm.teamup.repository.IProgettoRepository*
-""2findById(I)"¢
+%0,it.fgm.teamup.repository.IProgettoRepository2	findAll()"î
 z
-pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (1$
-"
-%1it.fgm.teamup.model.Progetto:
-""B1/
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java+ +(-
+
+%1java.util.ListB1/
 -it.fgm.teamup.serviceimpl.ProgettoServiceImpl

@@ -1,10 +1,10 @@
 
 ¡it.fgm.teamup.controllers.GestoreProgettoController#updateProgetto(ILit/fgm/teamup/model/Progetto;Lorg/springframework/validation/BindingResult;Lorg/springframework/ui/Model;)Ljava/lang/String;Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¢ ¢( "startingBlock*ß
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java§ §( "startingBlock*ß
 2Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¶ ¶(˙˜
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java® ®(˙˜
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¶ ¶( 
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java® ®( 
 
 %1void"&it.fgm.teamup.model.Progetto#setId(I)V**
 (
@@ -12,68 +12,116 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 ""2setId(I)Ü
 É
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaß ß( 
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java© ©( 
 %2"template!update-prog*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*'
 %
 modelorg.springframework.ui.Model"ñ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaß ß(!
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java© ©(!
 update-prog*•
 3Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java• •(íè
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaß ß(íè
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java• •(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaß ß(
 %0boolean"2org.springframework.validation.Errors#hasErrors()Z*8
 6
 result,org.springframework.validation.BindingResult2hasErrors()*
 2
-1*™
+1*¨
 startingBlockÇ
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¢  §(Cˇ
-¸
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java§  ¶(CÄ
+˝
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java° °(%
-%6"
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java£ £(%
+%12"
 __annotate*75
 3org.springframework.web.bind.annotation.PostMapping**
 (
-progettoit.fgm.teamup.model.Progetto»
-≈
+progettoit.fgm.teamup.model.Progetto…
+∆
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java£* £(2(
-progettoit.fgm.teamup.model.Progetto"__annotation*
-
-%6¡æ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java•* •(2(
+progettoit.fgm.teamup.model.Progetto"__annotation*
+
+%12¡æ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java§7 §(B%
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¶7 ¶(B%
 modelorg.springframework.ui.Model"java.lang.Object*
-3*ﬁ	
+3*≤
 1Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java™ ™(ì
-ê
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java´ ´(üú
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java™ ™(2
-%3,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
-3it.fgm.teamup.controllers.GestoreProgettoController"
-progettoRepositoryáÑ
-Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java™ ™(+"
-%4it.fgm.teamup.model.Progetto"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*4
-2
-%3,it.fgm.teamup.repository.IProgettoRepository**
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java´ ´(,
+%3java.lang.String"?it.fgm.teamup.model.Progetto#getDescrizione()Ljava/lang/String;**
 (
-progettoit.fgm.teamup.model.Progetto2save(Ljava/lang/Object;)ê
-ç
+progettoit.fgm.teamup.model.Progetto2getDescrizione()ø
+º
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¨ ¨(&
-%5"template!redirect:/visualizzap*7"5
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java´ ´(-
+pjava.lang.String"__id*
+
+%3java.lang.String±
+Æ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¨ ¨(
+%4java.io.PrintStream"__id*
+""ôñ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¨ ¨(
+
+%5void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%4java.io.PrintStream*
+
+pjava.lang.String2println(Ljava/lang/String;)±
+Æ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≠ ≠(
+%6java.io.PrintStream"__id*
+""Ê„
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≠ ≠('
+
+%7void"java.io.PrintStream#println(I)V*
+
+%6java.io.PrintStream*
+""2
+println(I)á
+Ñ
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÆ Æ(+
+%8%it.fgm.teamup.services.IUtenteService"__id*J*H5
+3it.fgm.teamup.controllers.GestoreProgettoController"
+utenteService˛˚
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÆ Æ(0"
+%9it.fgm.teamup.model.Progetto"ait.fgm.teamup.services.IUtenteService#saveProg(Ljava/lang/String;I)Lit/fgm/teamup/model/Progetto;*-
++
+%8%it.fgm.teamup.services.IUtenteService*
+
+pjava.lang.String*
+""2saveProg(Ljava/lang/String;I)ö
+ó
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∞ ∞(2#
+%10org.springframework.ui.Model"__mapSet*'
+%
+modelorg.springframework.ui.Model*
+
+progetto**
+(
+progettoit.fgm.teamup.model.Progettoé
+ã
+Ç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≤ ≤(#
+%11"template!modificaCompletata*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*'
 %
-modelorg.springframework.ui.Model"†
+modelorg.springframework.ui.Model"ù
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¨ ¨('
-redirect:/visualizzap:
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≤ ≤($
+modificaCompletata:
 "":(
 progettoit.fgm.teamup.model.Progetto:6
 result,org.springframework.validation.BindingResult:%

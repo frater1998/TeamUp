@@ -1,38 +1,0 @@
-
-rit.fgm.teamup.controllers.HomeController#destroySession(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java9 9( "startingBlock*Ì
-startingBlocku
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java9  9(<ù
-ö
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java8 8(
-%2"
-__annotate*75
-3org.springframework.web.bind.annotation.PostMapping*2
-0
-request%javax.servlet.http.HttpServletRequestÂ
-¿
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java94 9(;0
-request%javax.servlet.http.HttpServletRequest"__annotation*
-
-%2*
-1*¥
-1u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :(¶³
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :($
-%0javax.servlet.http.HttpSession"Rjavax.servlet.http.HttpServletRequest#getSession()Ljavax/servlet/http/HttpSession;*2
-0
-request%javax.servlet.http.HttpServletRequest2getSession()êç
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :()
-
-%1void",javax.servlet.http.HttpSession#invalidate()V*&
-$
-%0javax.servlet.http.HttpSession2invalidate()"‚
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java; ;(	
-index:0
-request%javax.servlet.http.HttpServletRequestB,*
-(it.fgm.teamup.controllers.HomeController

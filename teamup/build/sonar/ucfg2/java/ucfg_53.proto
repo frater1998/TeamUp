@@ -1,16 +1,17 @@
 
-Jit.fgm.teamup.model.Partecipazione#getUtente()Lit/fgm/teamup/model/Utente;o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaB B("1*ß
+Nit.fgm.teamup.model.Partecipazione#getProgetto()Lit/fgm/teamup/model/Progetto;o
+eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaJ J("1*å
 1o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaC C(Ð
-Í
+eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K(Ô
+Ñ
 o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaC C( 
-%0it.fgm.teamup.model.Utente"__id*2*0$
-"it.fgm.teamup.model.Partecipazione"
-utente"•
+eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K("
+%0it.fgm.teamup.model.Progetto"__id*4*2$
+"it.fgm.teamup.model.Partecipazione"
+
+progetto"—
 o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaC C("
- 
-%0it.fgm.teamup.model.UtenteB&$
+eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K($
+"
+%0it.fgm.teamup.model.ProgettoB&$
 "it.fgm.teamup.model.Partecipazione

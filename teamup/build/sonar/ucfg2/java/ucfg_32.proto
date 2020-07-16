@@ -1,155 +1,51 @@
 
-∂it.fgm.teamup.controllers.AdminController#loginadmin(Lit/fgm/teamup/model/Admin;Lorg/springframework/ui/ModelMap;Ljava/util/Locale;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java; ;("startingBlock*Û
-2v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaC C(Ô
-Ï
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaC C(
-%9"template!admin*-"+
-)it.fgm.teamup.controllers.AdminController*-
-+
-modelMaporg.springframework.ui.ModelMap"É
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaC C(	
-admin*¿
-3v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaB B(∫
-∑
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaB B(2
-%8java.lang.Object"__mapGet*
-
-%jsp_context*	
-admin*
-2
-1*æ
-startingBlockv
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java; =(Ì
-Í
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java: :(
-%11"
-__annotate*75
-3org.springframework.web.bind.annotation.PostMapping*$
+fit.fgm.teamup.serviceimpl.ProgettoServiceImpl#salva(Ljava/lang/String;I)Lit/fgm/teamup/model/Progetto;z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java ("1*ë
+1z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (.Ñ
+Å
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (.2
+%0,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
+progettoRepository∆√
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (="
+%1it.fgm.teamup.model.Progetto"Vit.fgm.teamup.repository.IProgettoRepository#findById(I)Lit/fgm/teamup/model/Progetto;*4
+2
+%0,it.fgm.teamup.repository.IProgettoRepository*
+""2findById(I)’
+“
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (>(
+progettoit.fgm.teamup.model.Progetto"__id*$
 "
-adminit.fgm.teamup.model.Admin
-Ì
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java; ;(5
-%12"
-__annotate*:8
-6org.springframework.web.bind.annotation.ModelAttribute*$
-"
-adminit.fgm.teamup.model.Adminø
-º
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java;< ;(A"
-adminit.fgm.teamup.model.Admin"__annotation*
-
-%11*
-
-%12Â
-‚
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java: :(
-%13"
-__annotate*75
-3org.springframework.web.bind.annotation.PostMapping*
-
-localejava.util.LocaleÆ
-´
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java<$ <(*
-localejava.util.Locale"__annotation*
-
-%13Ù
-Ò
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java: :(
-%14"
-__annotate*75
-3org.springframework.web.bind.annotation.PostMapping*+
-)
-sessionjavax.servlet.http.HttpSessionΩ
-∫
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java<8 <(?)
-sessionjavax.servlet.http.HttpSession"__annotation*
-
-%14∫∑
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java;C ;(U+
-modelMaporg.springframework.ui.ModelMap"java.lang.Object*
-5*Ë
-4v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA3 A(8ÉÄ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA3 A(F
-%5java.lang.String"9it.fgm.teamup.model.Admin#getPassword()Ljava/lang/String;*$
-"
-adminit.fgm.teamup.model.Admin2getPassword()—
-Œ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaAO A(R
-%6java.lang.String"__id*6*4+
-)it.fgm.teamup.controllers.AdminController"
-pwdàÖ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA3 A(T
-%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%5java.lang.String*
-
-%6java.lang.String2equals(Ljava/lang/Object;)*
-3
-1*¸	
-5v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java? ?(#Ω∫
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java? ?(!"
-%0it.fgm.teamup.model.Sessione"it.fgm.teamup.model.Sessioneœ
-Ã
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.java? ?(#
-%1"&it.fgm.teamup.model.Sessione#<init>()V*$
-"
-%0it.fgm.teamup.model.SessioneÉÄ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA A(
-%2java.lang.String"9it.fgm.teamup.model.Admin#getUsername()Ljava/lang/String;*$
-"
-adminit.fgm.teamup.model.Admin2getUsername()”
-–
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA( A(-
-%3java.lang.String"__id*8*6+
-)it.fgm.teamup.controllers.AdminController"
-emailàÖ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaA A(/
-%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%2java.lang.String*
-
-%3java.lang.String2equals(Ljava/lang/Object;)*
-4
-1*˛
-1v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaE E(ı
-Ú
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaE E(
-%10"template!loginadmin*-"+
-)it.fgm.teamup.controllers.AdminController*-
-+
-modelMaporg.springframework.ui.ModelMap"à
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/AdminController.javaE E( 
+%1it.fgm.teamup.model.Progetto∫∑
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java ((
 
-loginadmin:"
-adminit.fgm.teamup.model.Admin:+
-modelMaporg.springframework.ui.ModelMap:
-localejava.util.Locale:)
-sessionjavax.servlet.http.HttpSessionB-+
-)it.fgm.teamup.controllers.AdminController
+%2void"@it.fgm.teamup.model.Progetto#setDescrizione(Ljava/lang/String;)V**
+(
+progettoit.fgm.teamup.model.Progetto*
+
+descrjava.lang.String2"setDescrizione(Ljava/lang/String;)Ñ
+Å
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (!2
+%3,it.fgm.teamup.repository.IProgettoRepository"__id*I*G/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl"
+progettoRepository˛˚
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (0"
+%4it.fgm.teamup.model.Progetto"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*4
+2
+%3,it.fgm.teamup.repository.IProgettoRepository**
+(
+progettoit.fgm.teamup.model.Progetto2save(Ljava/lang/Object;)"¢
+z
+pC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/ProgettoServiceImpl.java (1$
+"
+%4it.fgm.teamup.model.Progetto:
+descrjava.lang.String:
+""B1/
+-it.fgm.teamup.serviceimpl.ProgettoServiceImpl

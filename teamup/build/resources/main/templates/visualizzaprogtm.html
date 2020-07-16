@@ -6,7 +6,11 @@
     <title>Good Thymes Virtual Grocery</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" media="all"/>
-    <script src="scripts/script.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 
 <body style = "margin: 0; padding: 0; font-family: 'Century Gothic';
@@ -16,7 +20,7 @@ background-color: white;
 <h1 style = "color: black; margin-left: 45%">Lista progetti</h1>
 <a onclick="goBack()"  class="btn" style="border: 1px solid #fff;
                 padding: 10px 30px; color: #fff; margin-right: 10px;
-                 text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Go Back</a>
+                 text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Torna Indietro</a>
 
                     <tr th:each="partecipazione : ${partecipazione}" >
                         <div class="card" style="background-color: black; border-radius: 5px;

@@ -1,17 +1,83 @@
 
-Nit.fgm.teamup.model.Partecipazione#getProgetto()Lit/fgm/teamup/model/Progetto;o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaJ J("1*Â
-1o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K(‘
-—
-o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K("
-%0it.fgm.teamup.model.Progetto"__id*4*2$
-"it.fgm.teamup.model.Partecipazione"
+òit.fgm.teamup.controllers.GestoreUtenteController#get(Lit/fgm/teamup/model/Utente;Ljava/util/Locale;Lorg/springframework/ui/ModelMap;)Ljava/lang/String;~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java) )("startingBlock*Ω
+startingBlock~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java) )(Wı
+Ú
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java( ((
+%4"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*&
+$
+utenteit.fgm.teamup.model.Utente˘
+ˆ
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java) )(%
+%5"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute*&
+$
+utenteit.fgm.teamup.model.Utente«
+ƒ
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java). )(4$
+utenteit.fgm.teamup.model.Utente"__annotation*
+
+%4*
+
+%5Î
+Ë
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java( ((
+%6"
+__annotate*64
+2org.springframework.web.bind.annotation.GetMapping*
+
+localejava.util.Localeµ
+≤
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java)= )(C
+localejava.util.Locale"__annotation*
+
+%6¬ø
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java)E )(V+
+modelMaporg.springframework.ui.ModelMap"java.lang.Object*
+1*æ	
+1~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java+ +(¡æ
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java+$ +(* 
+%0it.fgm.teamup.model.Utente"it.fgm.teamup.model.Utente”
+–
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java+  +(,
+%1"$it.fgm.teamup.model.Utente#<init>()V*"
+ 
+%0it.fgm.teamup.model.UtenteÑ
+Å
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java+ +(.
+%2java.lang.Object"__mapSet*-
++
+modelMaporg.springframework.ui.ModelMap*
+
+utente*"
+ 
+%0it.fgm.teamup.model.UtenteÑ
+Å
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java- -(
+%3"template!registrati*5"3
+1it.fgm.teamup.controllers.GestoreUtenteController*-
++
+modelMaporg.springframework.ui.ModelMap"ê
+~
+tC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreUtenteController.java- -(
 
-progetto"ó
-o
-eC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Partecipazione.javaK K($
-"
-%0it.fgm.teamup.model.ProgettoB&$
-"it.fgm.teamup.model.Partecipazione
+registrati:$
+utenteit.fgm.teamup.model.Utente:
+localejava.util.Locale:+
+modelMaporg.springframework.ui.ModelMapB53
+1it.fgm.teamup.controllers.GestoreUtenteController

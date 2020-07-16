@@ -19,4 +19,6 @@ public interface IProgettoService {
      public void deleteById(int id) ;
 
 
+    List<Progetto> listAllProgetti();
+    public Progetto getProgettoById(int id);
 }

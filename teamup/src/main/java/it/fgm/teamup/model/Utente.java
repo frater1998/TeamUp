@@ -21,7 +21,7 @@ public class Utente  {
 
     private String descrizione;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Sessione session;
 
     public Sessione getSession() {

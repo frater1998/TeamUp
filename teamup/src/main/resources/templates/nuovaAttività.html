@@ -5,6 +5,11 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <link rel = "stylesheet" href ="https://cdn.jsdelvir.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <title>nuovaAttività</title>
 </head>
 <body style = "font-family: sans-serif; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size: 100%;  margin : 0; padding :0" >
@@ -12,6 +17,7 @@
 
 <div class = "InserimentoAttività" style=" float: left; color: steelblue; margin-left: 20px">
     <h1 style = "color:#1c8adb; margin-bottom: 30px">Crea una nuova attività</h1>
+    <h3><a onclick="goBack()" style="color: white">Torna indietro</a></h3>
     <!--/*@thymesVar id="attivita" type=""*/-->
     <form th:action="@{/nuovaAttività}" th:object="${attivita}" method="post">
         <div class="field">
@@ -25,7 +31,7 @@
         <div class="field" >
             <label for="percentualeCompletamento">percentualeCompletamento</label>
             <select class="form-control" th:field="*{percentualeCompletamento}" id="percentualeCompletamento" style = "border-radius: 20px; padding: 10px; margin:10px 0; width:96%; border: 1px solid #999; outline: none">
-                <option th:value="0" th:text="20">0%</option>
+                <option th:value="0" th:text="0">0%</option>
                 <option th:value="20" th:text="20">20%</option>
                 <option th:value="40" th:text="40">40%</option>
                 <option th:value="60" th:text="60">60%</option>

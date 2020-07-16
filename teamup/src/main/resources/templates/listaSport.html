@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>listaMusica</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</head>
+<body
+        style = "margin: 0; padding: 0; font-family: 'Century Gothic';
+background-size : 100%">
+<ul style = "float: left; list-style-type: none; margin-top: 15px;">
+    <li style="display: inline-block"> <a onclick="goBack()"  class="btn" style="border: 1px solid #fff;
+                padding: 10px 30px;  margin-right: 10px;
+                 text-decoration: none">Torna indietro</a></li>
+</ul>
+<h1 style = "color: black; margin-left: 45%">Sport</h1>
+
+<tr th:each="progetto : ${progetto}">
+    <div class="card" style="background-color: black; border-radius: 5px; margin: 30px; box-shadow: 2px 2px 2px 10px black">
+        <div class="card-header" style = "color: white">
+            <td>
+                <a th:text="${progetto.titolo}" style="color: steelblue"></a>
+            </td>
+        </div>
+        <td >
+            <a th:text="${progetto.categoria}"  style="color: white"></a>
+        </td>
+        <p></p>
+        <td >
+            <a th:text="${progetto.descrizione}" style="color: white"></a>
+        </td>
+        <p></p>
+        <td>
+            <a th:href="@{/creapart-tm/{id}(id=${progetto.id})}" style="color: steelblue">
+                Invia richiesta
+            </a>
+        </td>
+    </div>
+</tr>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>

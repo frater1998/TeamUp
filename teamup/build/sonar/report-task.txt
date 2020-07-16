@@ -3,5 +3,5 @@ projectKey=frater1998_TeamUp
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.9563
 dashboardUrl=https://sonarcloud.io/dashboard?id=frater1998_TeamUp
-ceTaskId=AXM4cddlC7oZTBCPflQV
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXM4cddlC7oZTBCPflQV
+ceTaskId=AXM9ACBb1UbANAz7IHcL
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXM9ACBb1UbANAz7IHcL

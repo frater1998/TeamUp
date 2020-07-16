@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="scripts/script.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
 <form th:action="@{/update-prog/{id}(id=${progetto.id})}"
@@ -29,7 +33,7 @@
             >
         </div>
         <div class="control">
-            <button onclick="goBack()" class="button is-link is-light" style= "border: 1px solid #fff; padding: 10px 30px; color: black; text-decoration: none; background-color:  #999999; border-radius: 30px; font-size: 15px; margin: 10px 0;">Annulla</button>
+            <input value="Annulla" onclick="goBack()" class="button is-link is-light" style= "border: 1px solid #fff; padding: 10px 30px; color: black; text-decoration: none; background-color:  #999999; border-radius: 30px; font-size: 15px; margin: 10px 0;"></input>
         </div>
     </div>
 

@@ -2,10 +2,10 @@
 [
 java:S1128
 "9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8¹ƒêï².
-C
-java:S1481A"&Remove this unused "u" local variable.(úå§ı8Ûàô¼ª.
+^
+java:S2441C"<Make "Utente" serializable or don't store it in the session.(ÛÀ§ùÿÿÿÿ8Èçõë².
 V
 java:S1128"9Remove this unused import 'it.fgm.teamup.model.Sessione'.(¤¾”½8¢®÷Ò².
-^
-java:S2441B"<Make "Utente" serializable or don't store it in the session.(ÛÀ§ùÿÿÿÿ8Èçõë².
-W	java:S125R"<This block of commented-out lines of code should be removed.(¬”c8õœ«Ñ².
+W	java:S125S"<This block of commented-out lines of code should be removed.(¬”c8õœ«Ñ².
+C
+java:S1481A"&Remove this unused "u" local variable.(úå§ı8Ë´¼˜µ.

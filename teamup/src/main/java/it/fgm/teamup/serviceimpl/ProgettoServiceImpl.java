@@ -15,6 +15,8 @@ import java.util.List;
 public class ProgettoServiceImpl implements IProgettoService{
 
 
+
+
     @Autowired
     IProgettoRepository progettoRepository;
 
@@ -50,5 +52,14 @@ public class ProgettoServiceImpl implements IProgettoService{
 
     }
 
+    @Override
+    public List<Progetto> listAllProgetti(){
+        return progettoRepository.findAll();
+    }
+
+    @Override
+   public Progetto getProgettoById(int id){
+        return progettoRepository.findById( id );
+    }
 
 }

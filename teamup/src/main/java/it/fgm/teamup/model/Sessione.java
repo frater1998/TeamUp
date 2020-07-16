@@ -9,7 +9,7 @@ public class Sessione {
     @Id
     private String id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Utente utente;
 
     public String getId() {

@@ -1,40 +1,40 @@
 
 qit.fgm.teamup.controllers.GestoreProgettoController#deleteUser(ILorg/springframework/ui/Model;)Ljava/lang/String;Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaé é("startingBlock*›
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaî î("startingBlock*›
 startingBlockÇ
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaé é(E¡æ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaî î(E¡æ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaé9 é(D%
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaî9 î(D%
 modelorg.springframework.ui.Model"java.lang.Object*
 1*Œ
 1Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaè( è(@û
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaï( ï(@û
 õ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaè( è(@7
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaï( ï(@7
 %01it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
 3it.fgm.teamup.controllers.GestoreProgettoController"
 partecipazioneRepositoryÂ‚
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaè( è(O(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaï( ï(O(
 %1"it.fgm.teamup.model.Partecipazione"ait.fgm.teamup.repository.PartecipazioneRepository#findById(J)Lit/fgm/teamup/model/Partecipazione;*9
 7
 %01it.fgm.teamup.repository.PartecipazioneRepository*
 ""2findById(J)
 Ì
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaè è(P4
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaï ï(P4
 partecipazione"it.fgm.teamup.model.Partecipazione"__id**
 (
 %1"it.fgm.teamup.model.Partecipazioneû
 õ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaê ê( 7
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javañ ñ( 7
 %21it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
 3it.fgm.teamup.controllers.GestoreProgettoController"
 partecipazioneRepositoryÛ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaê ê(9
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javañ ñ(9
 
 %3void"Norg.springframework.data.repository.CrudRepository#delete(Ljava/lang/Object;)V*9
 7
@@ -43,18 +43,18 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 partecipazione"it.fgm.teamup.model.Partecipazione2delete(Ljava/lang/Object;)û
 õ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaë. ë(F7
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaó. ó(F7
 %41it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
 3it.fgm.teamup.controllers.GestoreProgettoController"
 partecipazioneRepositoryµ≤
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaë. ë(P
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaó. ó(P
 %5java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*9
 7
 %41it.fgm.teamup.repository.PartecipazioneRepository2	findAll()ã
 à
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaë ë(R"
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaó ó(R"
 %6org.springframework.ui.Model"__mapSet*'
 %
 modelorg.springframework.ui.Model*
@@ -63,13 +63,13 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 %5java.util.Listõ
 ò
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaí í(1
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaò ò(1
 %7")template!redirect:/visualizzaPartecipanti*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*'
 %
 modelorg.springframework.ui.Model"´
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaí í(2$"
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaò ò(2$"
  redirect:/visualizzaPartecipanti:
 "":%
 modelorg.springframework.ui.ModelB75

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>GestioneRichieste</title>
-    <script src="scripts/script.js"></script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body style = "margin: 0; padding: 0; font-family: 'Century Gothic';
 background-color: white; background-size: 100%" >
 
 <h1 style = "color:black; margin-left: 30px">Lista richieste</h1>
-<a onclick="goBack()"  class="btn" style="border: 1px solid #fff;
-                padding: 10px 30px; color: #fff; margin-right: 10px;
-                 text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Torna indietro</a>
+<a onclick="goBack()"  class="btn" style="
+                padding: 10px 30px; color: black; margin-right: 10px;
+                 text-decoration: none">Torna indietro</a>
 <tr th:each="partecipazione : ${partecipazione}">
 <div class="card" style="width: 30rem; background-color: white; border-radius: 5px;
 margin: 30px; box-shadow: 2px 2px 2px 10px black">
@@ -20,10 +24,10 @@ margin: 30px; box-shadow: 2px 2px 2px 10px black">
             <td th:text="${partecipazione.utente.nome} + ' ' + ${partecipazione.utente.cognome}"></td>
         </h5>
         <h6 class="card-subtitle mb-2 text-muted" style="margin-left: 20px"><td th:text="${partecipazione.utente.email}"></td></h6>
-        <p class="card-text" style="margin-left: 20px"><td th:text="${partecipazione.utente.descrizione}"></td></p>
+        <p class="card-text" style="margin-left: 20px"><td th:text="${partecipazione.progetto.titolo}"></td></p>
         <a  th:href="@{/confermaRichiesta/{id}(id=${partecipazione.id})}" class="btn btn-primary" style="color: white; background-color: #27ae60; margin-left: 20px">Accetta</a>
         <a  th:href="@{/deleteRichiesta/{id}(id=${partecipazione.id})}" class="btn btn-primary" style="color: white; background-color: red; margin-left: 60px">Rifiuta</a>
-        <a  class="card-link" th:href="@{/profilo/{id}(id=${partecipazione.utente.id})}" style="margin-left: 150px">Visualizza Profilo</a>
+        <a  class="card-link" th:href="@{/profilonomod/{id}(id=${partecipazione.utente.id})}" style="margin-left: 150px">Visualizza Profilo</a>
     </div>
 </div>
 </tr>

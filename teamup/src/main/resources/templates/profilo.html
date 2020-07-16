@@ -7,6 +7,13 @@
             window.history.back();
         }
     </script>
+
+    <script>
+        function ShowButton()
+        {
+            document.getElementById('cmd').style.visibility = "unvisible";
+        }
+    </script>
     <link rel="stylesheet">
     <title>profilo</title>
 </head>
@@ -22,7 +29,7 @@
         <br>
         <a onclick="goBack()"  class="btn" style="border: 1px solid #fff;
                 padding: 10px 30px; color: #fff; margin-right: 10px;
-                 text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Go Back</a>
+                 text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Torna Indietro</a>
 
     </div>
 
@@ -31,8 +38,8 @@
             <h3 style="margin-bottom: 15px; padding-bottom: 5px; border-bottom: 1px solid #e0e0e0; color: #353c4e; text-transform: uppercase; letter-spacing: 5px">Informazioni</h3>
 
             <div class = "button" style="position: absolute; top:12%; left:87%; transform: translate(-50%,-50%);
-                        display: inline-block">
-                <a th:href="@{/updateProfilo/{id}(id=${utente.id})}" class="btn" style="border: 1px solid #fff;
+                        display: inline-block"  >
+                <a  onclick="ShowButton" th:href="@{/updateProfilo/{id}(id=${utente.id})}" class="btn" style="border: 1px solid #fff;
                 padding: 10px 30px; color: #fff; text-decoration: none; background-color:  #01dbdf; border-radius: 30px">Modifica Profilo</a>
 
             </div>

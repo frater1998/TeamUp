@@ -1,32 +1,32 @@
 
 ≈it.fgm.teamup.controllers.GestoreProgettoController#postupdateAttivita(ILit/fgm/teamup/model/Attivita;Lorg/springframework/validation/BindingResult;Lorg/springframework/ui/Model;)Ljava/lang/String;Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¡ ¡($"startingBlock* 
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java√ √($"startingBlock* 
 2Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∆ ∆(/ñ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(/ñ
 ì
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∆ ∆(/
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(/
 %1"$template!redirect:/modificaAttivit√†*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*'
 %
 modelorg.springframework.ui.Model"¶
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java∆ ∆(0
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(0
 redirect:/modificaAttivit√†*•
 3Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≈ ≈(íè
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java« «(íè
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≈ ≈(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java« «(
 %0boolean"2org.springframework.validation.Errors#hasErrors()Z*8
 6
 result,org.springframework.validation.BindingResult2hasErrors()*
 2
 1*¨
 startingBlockÇ
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¡$ √(GÄ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java√$ ≈(GÄ
 ˝
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¿ ¿(*
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¬ ¬(*
 %11"
 __annotate*75
 3org.springframework.web.bind.annotation.PostMapping**
@@ -34,34 +34,34 @@ __annotate*75
 attivitait.fgm.teamup.model.Attivita…
 ∆
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¬. ¬(6(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaƒ. ƒ(6(
 attivitait.fgm.teamup.model.Attivita"__annotation*
 
 %11¡æ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java√; √(F%
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java≈; ≈(F%
 modelorg.springframework.ui.Model"java.lang.Object*
 3*Õ
 1Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java   (π∂
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã(π∂
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java   (9
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã(9
 %2java.lang.String"Lit.fgm.teamup.model.Attivita#getPercentualeCompletamento()Ljava/lang/String;**
 (
 attivitait.fgm.teamup.model.Attivita2getPercentualeCompletamento()ø
 º
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java   (:
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã(:
 ajava.lang.String"__id*
 
 %2java.lang.String±
 Æ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÀ À(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÕ Õ(
 %3java.io.PrintStream"__id*
 ""ôñ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÀ À(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÕ Õ(
 
 %4void"0java.io.PrintStream#println(Ljava/lang/String;)V*
 
@@ -70,11 +70,11 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 ajava.lang.String2println(Ljava/lang/String;)±
 Æ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaŒ Œ(
 %5java.io.PrintStream"__id*
 ""Ê„
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaŒ Œ(
 
 %6void"java.io.PrintStream#println(I)V*
 
@@ -83,12 +83,12 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 println(I)ç
 ä
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÕ Õ(.
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaœ œ(.
 %7(it.fgm.teamup.services.IAttivit√†Service"__id*M*K5
 3it.fgm.teamup.controllers.GestoreProgettoController"
 attivit√†Service¸˘
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÕ Õ($"
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaœ œ($"
 %8it.fgm.teamup.model.Attivita"`it.fgm.teamup.services.IAttivit√†Service#save(Ljava/lang/String;I)Lit/fgm/teamup/model/Attivita;*0
 .
 %7(it.fgm.teamup.services.IAttivit√†Service*
@@ -97,7 +97,7 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 ""2save(Ljava/lang/String;I)ô
 ñ
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java— —(2"
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java” ”(2"
 %9org.springframework.ui.Model"__mapSet*'
 %
 modelorg.springframework.ui.Model*
@@ -107,13 +107,13 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 attivitait.fgm.teamup.model.Attivitaç
 ä
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java” ”("
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java’ ’("
 %10"template!homePage_progetti*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*'
 %
 modelorg.springframework.ui.Model"ú
 Ç
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java” ”(#
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java’ ’(#
 homePage_progetti:
 "":(
 attivitait.fgm.teamup.model.Attivita:6

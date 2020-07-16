@@ -1,12 +1,12 @@
 
 Ïit.fgm.teamup.controllers.GestoreProgettoController#visualizzaEntitÃ (Lit/fgm/teamup/model/Utente;Lorg/springframework/ui/Model;Ljavax/servlet/http/HttpSession;)Lorg/springframework/web/servlet/ModelAndView;‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹ ¹(("startingBlock*¼
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¿ ¿(("startingBlock*¼
 
 startingBlock‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¹( ¼(-þ
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¿( Â(-þ
 û
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¸ ¸(A
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(A
 %7"
 __annotate*:8
 6org.springframework.web.bind.annotation.RequestMapping*&
@@ -14,7 +14,7 @@ $
 utenteit.fgm.teamup.model.Utenteþ
 û
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java» »(%
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÁ Á(%
 %8"
 __annotate*:8
 6org.springframework.web.bind.annotation.ModelAttribute*&
@@ -22,7 +22,7 @@ $
 utenteit.fgm.teamup.model.UtenteÌ
 É
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java»- »(3$
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÁ- Á(3$
 utenteit.fgm.teamup.model.Utente"__annotation*
 
 %7*
@@ -30,7 +30,7 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 %8ƒ
 €
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¸ ¸(A
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(A
 %9"
 __annotate*:8
 6org.springframework.web.bind.annotation.RequestMapping*+
@@ -38,48 +38,48 @@ __annotate*:8
 sessionjavax.servlet.http.HttpSessionÉ
 Æ
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¼% ¼(,)
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÂ% Â(,)
 sessionjavax.servlet.http.HttpSession"__annotation*
 
 %9*
-1*Ã
+1*Â
 1‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(-êç
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÄ Ä(-êç
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(+2
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÄ Ä(+2
 %0,org.springframework.web.servlet.ModelAndView",org.springframework.web.servlet.ModelAndViewü
 ù
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(-
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÄ Ä(-
 %1"6org.springframework.web.servlet.ModelAndView#<init>()V*4
 2
 %0,org.springframework.web.servlet.ModelAndViewù
 ö
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.java¾ ¾(.3
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÄ Ä(.3
 mav,org.springframework.web.servlet.ModelAndView"__id*4
 2
 %0,org.springframework.web.servlet.ModelAndView“
 
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÀ! À(32
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÆ# Æ(52
 %2,it.fgm.teamup.repository.IProgettoRepository"__id*O*M5
 3it.fgm.teamup.controllers.GestoreProgettoController"
-progettoRepository°­
+progettoRepository¯¬
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÀ! À(=
-%3java.util.List"Oorg.springframework.data.jpa.repository.JpaRepository#findAll()Ljava/util/List;*4
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÆ# Æ(C
+%3java.util.List"Jit.fgm.teamup.repository.IProgettoRepository#getprogetti()Ljava/util/List;*4
 2
-%2,it.fgm.teamup.repository.IProgettoRepository2	findAll()Â
+%2,it.fgm.teamup.repository.IProgettoRepository2getprogetti()Â
 ¿
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÀ À(>
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÆ Æ(D
 progettojava.util.List"__id*
 
 %3java.util.List©
 ¦
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÂ Â(,2
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÈ È(,2
 %4,org.springframework.web.servlet.ModelAndView"__mapSet*5
 3
 mav,org.springframework.web.servlet.ModelAndView*
@@ -88,7 +88,7 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 
 progettojava.util.ListÆÃ
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÃ Ã("
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÉ É("
 
 %5void"Morg.springframework.web.servlet.ModelAndView#setViewName(Ljava/lang/String;)V*5
 3
@@ -96,13 +96,13 @@ vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/con
 admin2setViewName(Ljava/lang/String;)Ž
 ‹
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÈ È(
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÎ Î(
 %6"template!admin*7"5
 3it.fgm.teamup.controllers.GestoreProgettoController*5
 3
 mav,org.springframework.web.servlet.ModelAndView"¼
 ‚
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÈ È(5
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreProgettoController.javaÎ Î(5
 3
 mav,org.springframework.web.servlet.ModelAndView:$
 utenteit.fgm.teamup.model.Utente:%

@@ -63,7 +63,7 @@ public String get(Utente utente, ModelMap modelMap,
     if (utenteService.findByEmailAndPassword(user.getEmail(), user.getPassword())!= null
             && session.getAttribute( "utente" )== null){
 
-       Session ses = (Session) session.getAttribute( "utente" );
+      // Session ses = (Session) session.getAttribute( "utente" );
         try {
             //Query query = ses.createQuery( sql );
            // query.setParameter( 0, user.getEmail() );
@@ -99,7 +99,7 @@ public String get(Utente utente, ModelMap modelMap,
 
         }
         else {
-            return "redirect:profiloUtente";
+            return "redirect:login?error";
 
         }
     }

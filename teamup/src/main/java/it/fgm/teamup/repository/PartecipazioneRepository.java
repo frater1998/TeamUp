@@ -18,6 +18,9 @@ public interface PartecipazioneRepository extends JpaRepository<Partecipazione, 
     @Query("select p from Partecipazione p where p.utente.id = :id and p.ruolo = 'LEADER' group by p.utente.id")
     Partecipazione findByUtenteIdAndRuoloIsLeader(int id);
 
+    @Query("select p from Partecipazione p where p.ruolo = 'LEADER' group by p.utente.id")
+    Partecipazione findByRuoloIsLeader();
+
     @Query("select p from Partecipazione p where p.partecipazione_confermata = false")
     List<Partecipazione> findByPartecipazione_confermataIsFalse(boolean pc);
 
@@ -37,7 +40,8 @@ public interface PartecipazioneRepository extends JpaRepository<Partecipazione, 
   //  Partecipazione findByProgettoIdAndUtenteId(int id);
 
 
-    @Query("SELECT p FROM Partecipazione p join Partecipazione p1 on p.progetto.id = p1.progetto.id where p.partecipazione_confermata = true and p.ruolo = 'TEAM-MATE' and p1.ruolo = 'LEADER' group by p.progetto.id")
+    @Query("SELECT p FROM Partecipazione p join Partecipazione p1 on p.progetto.id = p1.progetto.id where p.partecipazione_confermata = true " +
+            "and p.ruolo = 'TEAM-MATE' and p1.ruolo = 'LEADER' group by p.progetto.id")
     List<Partecipazione> findAllByPartecipazione_confermataIsTrueAndAndRuolo();
 
 }

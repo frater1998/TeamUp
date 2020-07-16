@@ -20,7 +20,7 @@ public class GestoreUtenteController {
 
 
 
-   @Autowired
+    @Autowired
     IUtenteService utenteService;
 
     @Autowired
@@ -63,6 +63,7 @@ public class GestoreUtenteController {
 
 
         Utente u = utenteRepository.save(utente);
+
         session.setAttribute( "utente", utente );
 
         session.invalidate();

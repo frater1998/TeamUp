@@ -1,46 +1,47 @@
 
-D
-java:S1481£"&Remove this unused "s" local variable.(ÄÄµë8ûóñ¾³.
-Y	java:S125É"<This block of commented-out lines of code should be removed.(ÀëŠ8ûóñ¾³.
-z	java:S116#"^Rename this field "attivitÃ Repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿öîÂ8Ÿ¢ø®.
-d
-java:S1192ù"FDefine a constant instead of duplicating this literal "ciao2" 4 times.(½ˆå­8ûóñ¾³.
-m
-java:S1192·"ODefine a constant instead of duplicating this literal "partecipazione" 8 times.(“ÇÈº8ûóñ¾³.
+^	java:S125†"<This block of commented-out lines of code should be removed.(¤äƒíÿÿÿÿÿ8¨ùÑ¾³.
 F
-java:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ù·Ëí².
-k	java:S100«"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‚•¤8•³·£°.
-g
-java:S1192’"IDefine a constant instead of duplicating this literal "attivita" 4 times.(î¢€Û8İÅš¼³.
-g
-java:S1192˜"JDefine a constant instead of duplicating this literal "attivitÃ " 3 times.(¤ˆß8¯âÉí².
-c
-java:S1226ü"EIntroduce a new variable instead of reusing the parameter "progetto".(«âüğ8ûóñ¾³.
-g
-java:S11925"JDefine a constant instead of duplicating this literal "progetto" 14 times.(û£ß8ÿ‘–®.
-w	java:S1160"VRename this field "progetto_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…§Ô¼şÿÿÿÿ8İÅš¼³.
-^	java:S125Ë"<This block of commented-out lines of code should be removed.(ıËÖ¤üÿÿÿÿ8œ¡¾³.
-E
-java:S1148h"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾‹÷í².
-^	java:S125Ò"<This block of commented-out lines of code should be removed.(¤äƒíÿÿÿÿÿ8¨ùÑ¾³.
-V
-java:S1481"3Remove this unused "partecipazione" local variable.(ı¶©ûÿÿÿÿ8·À—ï².
-Y	java:S125­"<This block of commented-out lines of code should be removed.(ÒˆŠ8Ÿ½ÈÀ³.
-[
-java:S2441˜">Make "Attivita" serializable or don't store it in the session.(¤ˆß8ÒßíÁ³.
-Y	java:S125¾"<This block of commented-out lines of code should be removed.(£‹ü¢8İÅš¼³.
-o	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œª¡ıÿÿÿÿ8ÿ‘–®.
-^	java:S125Ğ"<This block of commented-out lines of code should be removed.(Õìäûûÿÿÿÿ8¶Ù¡¾³.
-k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞªÂÉ8ûóñ¾³.
-w	java:S116"[Rename this field "attivitÃ Service" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù­À€8İÅš¼³.
-^	java:S125Ì"<This block of commented-out lines of code should be removed.(í¼’úÿÿÿÿ8ûóñ¾³.
-`
-java:S2441l">Make "Progetto" serializable or don't store it in the session.(¤Ğª²şÿÿÿÿ8ğßÕğ².
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ù·Ëí².
+P
+java:S1481Â"-Remove this unused "progetto" local variable.(†ŸË÷øÿÿÿÿ8Û›Ğ™µ.
 d
-java:S1192f"GDefine a constant instead of duplicating this literal "utente" 4 times.(ü¹Üè8ù·Ëí².
-p	java:S100¿"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‰ê¶ùÿÿÿÿ8ûóñ¾³.
+java:S1192§"FDefine a constant instead of duplicating this literal "ciao2" 4 times.(½ˆå­8ûóñ¾³.
+Y	java:S125÷"<This block of commented-out lines of code should be removed.(ÀëŠ8ûóñ¾³.
+k	java:S100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞªÂÉ8ûóñ¾³.
+[
+java:S2441Î">Make "Attivita" serializable or don't store it in the session.(¤ˆß8Š‰Üò³.
+g
+java:S11926"JDefine a constant instead of duplicating this literal "progetto" 18 times.(û£ß8ÿ‘–®.
+e
+java:S1192œ"GDefine a constant instead of duplicating this literal "utente" 7 times.(ü¹Üè8ù·Ëí².
+g
+java:S1192Î"JDefine a constant instead of duplicating this literal "attivitÃ " 3 times.(¤ˆß8¯âÉí².
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Å€Ûò³.
+^	java:S125Ù"<This block of commented-out lines of code should be removed.(Ã¥‘ûÿÿÿÿ8ü®Ñ™µ.
+^	java:S125„"<This block of commented-out lines of code should be removed.(Õìäûûÿÿÿÿ8¶Ù¡¾³.
+w	java:S1161"VRename this field "progetto_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…§Ô¼şÿÿÿÿ8İÅš¼³.
+w	java:S116"[Rename this field "attivitÃ Service" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù­À€8İÅš¼³.
+m
+java:S1192å"ODefine a constant instead of duplicating this literal "partecipazione" 7 times.(“ÇÈº8ûóñ¾³.
+a
+java:S2441¢">Make "Progetto" serializable or don't store it in the session.(¤Ğª²şÿÿÿÿ8Š‰Üò³.
+^	java:S125ÿ"<This block of commented-out lines of code should be removed.(ıËÖ¤üÿÿÿÿ8œ¡¾³.
+Y	java:S125§"<This block of commented-out lines of code should be removed.(İì¿8›´ì™µ.
+Y	java:S125Û"<This block of commented-out lines of code should be removed.(ÒˆŠ8Ÿ½ÈÀ³.
+F
+java:S1148Ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾‹÷í².
+Y	java:S125ò"<This block of commented-out lines of code should be removed.(£‹ü¢8İÅš¼³.
+^	java:S125ğ"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ8ÑÓõò³.
+k	java:S100ß"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶‚•¤8•³·£°.
+V
+java:S1481Å"3Remove this unused "partecipazione" local variable.(ı¶©ûÿÿÿÿ8·À—ï².
+g
+java:S1192È"IDefine a constant instead of duplicating this literal "attivita" 4 times.(î¢€Û8İÅš¼³.
 i
-java:S1192ö"FDefine a constant instead of duplicating this literal "ciao1" 5 times.(²øŸæûÿÿÿÿ8ûóñ¾³.
-f
-java:S4488¾"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¯Ô«8ûóñ¾³.
-^	java:S125¤"<This block of commented-out lines of code should be removed.(¢‡¶Ãüÿÿÿÿ8ûóñ¾³.
+java:S1192¤"FDefine a constant instead of duplicating this literal "ciao1" 5 times.(²øŸæûÿÿÿÿ8ûóñ¾³.
+z	java:S116$"^Rename this field "attivitÃ Repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿öîÂ8Ÿ¢ø®.
+D
+java:S1481Ñ"&Remove this unused "s" local variable.(ÄÄµë8ûóñ¾³.
+o	java:S100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œª¡ıÿÿÿÿ8ÿ‘–®.
+^	java:S125Ò"<This block of commented-out lines of code should be removed.(¢‡¶Ãüÿÿÿÿ8˜Èì™µ.

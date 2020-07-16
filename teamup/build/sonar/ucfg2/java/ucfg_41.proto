@@ -1,17 +1,17 @@
 
-9it.fgm.teamup.model.Admin#getUsername()Ljava/lang/String;f
-\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java ("1*©
+9it.fgm.teamup.model.Admin#getPassword()Ljava/lang/String;f
+\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java ("1*©
 1f
-\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (¶
+\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (¶
 ³
 f
-\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (
+\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (
 %0java.lang.String"__id*+*)
 it.fgm.teamup.model.Admin"
 
-username"‚
+password"‚
 f
-\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (
+\C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Admin.java (
 
 %0java.lang.StringB
 it.fgm.teamup.model.Admin

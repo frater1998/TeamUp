@@ -16,8 +16,7 @@ public class Attivita {
 
    private String percentualeCompletamento;
 
-   Date dataInizio;
-   Date dataFine;
+
 
      @JoinColumn(name = "progetto_id",
              referencedColumnName = "id")

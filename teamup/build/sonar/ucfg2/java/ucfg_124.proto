@@ -1,83 +1,38 @@
 
-it.fgm.teamup.controllers.HomeController#home(Lorg/springframework/ui/Model;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ("startingBlock*§
-2u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((ª§
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (&
-%1java.util.ArrayList"java.util.ArrayList¼
-¹
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((
-%2"java.util.ArrayList#<init>()V*
-
-%1java.util.ArrayList¹
-¶
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java ((
-messagesjava.util.List"__id*
-
-%1java.util.ArrayList*
-1*ü
-3u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java/ (6¾
-»
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java/ (S
-%0java.lang.Object"__mapGet*
-
-%jsp_context*
-
-MY_SESSION¶
-³
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (T
-messagesjava.util.List"__id*
-
-%0java.lang.Object*
-2
-1*ó
+rit.fgm.teamup.controllers.HomeController#destroySession(Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/String;u
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java9 9( "startingBlock*Ì
 startingBlocku
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (8ñ
-î
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java9  9(<ù
+ö
 u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (
-%5"
-__annotate*64
-2org.springframework.web.bind.annotation.GetMapping*+
-)
-sessionjavax.servlet.http.HttpSession»
-¸
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java8 8(
+%2"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*2
+0
+request%javax.servlet.http.HttpServletRequestÂ
+¿
 u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java0 (7)
-sessionjavax.servlet.http.HttpSession"__annotation*
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java94 9(;0
+request%javax.servlet.http.HttpServletRequest"__annotation*
 
-%5³°
-u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (#%
-modelorg.springframework.ui.Model"java.lang.Object*
-3*ð
+%2*
+1*¥
 1u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java („
-
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :(¶³
 u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java (9"
-%3org.springframework.ui.Model"__mapSet*'
-%
-modelorg.springframework.ui.Model*
-sessionMessages*
-
-messagesjava.util.Listç
-ä
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :($
+%0javax.servlet.http.HttpSession"Rjavax.servlet.http.HttpServletRequest#getSession()Ljavax/servlet/http/HttpSession;*2
+0
+request%javax.servlet.http.HttpServletRequest2getSession()êç
 u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java! !(
-%4"template!index*,"*
-(it.fgm.teamup.controllers.HomeController*'
-%
-modelorg.springframework.ui.Model"‚
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java: :()
+
+%1void",javax.servlet.http.HttpSession#invalidate()V*&
+$
+%0javax.servlet.http.HttpSession2invalidate()"‚
 u
-kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java! !(	
-index:%
-modelorg.springframework.ui.Model:)
-sessionjavax.servlet.http.HttpSessionB,*
+kC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/HomeController.java; ;(	
+index:0
+request%javax.servlet.http.HttpServletRequestB,*
 (it.fgm.teamup.controllers.HomeController

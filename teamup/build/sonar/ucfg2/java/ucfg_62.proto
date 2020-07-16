@@ -1,96 +1,23 @@
 
-žit.fgm.teamup.controllers.LoginController#get(Lit/fgm/teamup/model/Utente;Lorg/springframework/ui/ModelMap;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java+ +("startingBlock*ü
-2v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java. .(¹¶
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java.$ .(* 
-%1it.fgm.teamup.model.Utente"it.fgm.teamup.model.UtenteË
-È
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java.  .(,
-%2"$it.fgm.teamup.model.Utente#<init>()V*"
- 
-%1it.fgm.teamup.model.Utenteü
-ù
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java. .(.
-%3java.lang.Object"__mapSet*-
-+
-modelMaporg.springframework.ui.ModelMap*
-
-utente*"
- 
-%1it.fgm.teamup.model.Utenteï
-ì
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java/ /(
-%4"template!login*-"+
-)it.fgm.teamup.controllers.LoginController*-
-+
-modelMaporg.springframework.ui.ModelMap"ƒ
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java/ /(	
-login*Á
-3v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java- -(»
-¸
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java- -((
-%0java.lang.Object"__mapGet*
-
-%jsp_context*
-
-utente*
-2
-1*£	
-startingBlockv
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java+ ,(&ë
-è
-t
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java* *(
-%6"
-__annotate*64
-2org.springframework.web.bind.annotation.GetMapping*&
-$
-utenteit.fgm.teamup.model.Utente·
-´
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java+ +($
-utenteit.fgm.teamup.model.Utente"__annotation*
-
-%6ð
-í
-t
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java* *(
-%7"
-__annotate*64
-2org.springframework.web.bind.annotation.GetMapping*+
-)
-sessionjavax.servlet.http.HttpSession¼
-¹
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java, ,(%)
-sessionjavax.servlet.http.HttpSession"__annotation*
-
-%7º·
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java+! +(3+
-modelMaporg.springframework.ui.ModelMap"java.lang.Object*
-3*“
-1v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java1 1(&ÿ
-ü
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java1 1(&
-%5"template!redirect:login:?error*-"+
-)it.fgm.teamup.controllers.LoginController*-
-+
-modelMaporg.springframework.ui.ModelMap"“
-v
-lC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/LoginController.java1 1('
-redirect:login:?error:$
-utenteit.fgm.teamup.model.Utente:+
-modelMaporg.springframework.ui.ModelMap:)
-sessionjavax.servlet.http.HttpSessionB-+
-)it.fgm.teamup.controllers.LoginController
+iit.fgm.teamup.serviceimpl.PartecipazioneServiceImpl#findByUtenteId(I)Lit/fgm/teamup/model/Partecipazione;€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java   (("1*É
+1€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !('œ
+™
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !('7
+%01it.fgm.teamup.repository.PartecipazioneRepository"__id*U*S5
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl"
+partecipazioneRepositoryïì
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !(<(
+%1"it.fgm.teamup.model.Partecipazione"git.fgm.teamup.repository.PartecipazioneRepository#findByUtenteId(I)Lit/fgm/teamup/model/Partecipazione;*9
+7
+%01it.fgm.teamup.repository.PartecipazioneRepository*
+""2findByUtenteId(I)"¯
+€
+vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java! !(=*
+(
+%1"it.fgm.teamup.model.Partecipazione:
+""B75
+3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl

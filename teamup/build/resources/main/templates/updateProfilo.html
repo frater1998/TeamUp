@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet">
     <title>modificaProfilo</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body style = "font-family: sans-serif; background: url(https://i.joecomp.com/img/google-chrome/270/windows-10-taskbar-not-hiding-in-fullscreen-8-ways-to-solve-it_17.jpg); background-size: 100%;  margin : 0; padding :0; box-sizing: border-box; list-style: none; ">
 <form action="#" th:action="@{/updateProfilo/{id}(id=${utente.id})}" th:object="${utente}"  method="post">
@@ -29,11 +34,11 @@
 
             </div>
             <div class="control">
-                <button th:href="@{profilo}"  value="Annulla"
+                <input   onclick="goBack()" value="Annulla"
                        class="button is-link is-light" style = "color: #fff;
                        background-color: #919aa3; width: 100%; padding: 10px;
                        border-radius: 20px; font-size: 15px; margin: 10px 0; border: none; outline: none;
-                       cursor:pointer; text-align: center" > Annulla </button>
+                       cursor:pointer; text-align: center" >  </input>
 
             </div>
         </div>

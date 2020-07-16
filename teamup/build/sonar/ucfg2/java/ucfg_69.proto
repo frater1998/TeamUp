@@ -1,102 +1,9 @@
 
-Íit.fgm.teamup.serviceimpl.PartecipazioneServiceImpl#impostaPartecipazione(Lit/fgm/teamup/model/Utente;Lit/fgm/teamup/model/Progetto;Lit/fgm/teamup/model/Partecipazione;)Lit/fgm/teamup/model/Partecipazione;€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java, ,(/"1*¥
-1€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java/ /(¯
-¬
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java/ /(
-%0java.io.PrintStream"__id*
-""£ 
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java/ /(4
-%1java.lang.String"?it.fgm.teamup.model.Partecipazione#getRuolo()Ljava/lang/String;*6
-4
-partecipazione"it.fgm.teamup.model.Partecipazione2
-getRuolo()˜•
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java/ /(5
-
-%2void"0java.io.PrintStream#println(Ljava/lang/String;)V*
-
-%0java.io.PrintStream*
-
-%1java.lang.String2println(Ljava/lang/String;)¯
-¬
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java0 0(
-%3java.io.PrintStream"__id*
-""±®
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java0 0(H
-%4boolean"Bit.fgm.teamup.model.Partecipazione#getPartecipazione_confermata()Z*6
-4
-partecipazione"it.fgm.teamup.model.Partecipazione2getPartecipazione_confermata()íê
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java0 0(I
-
-%5void"java.io.PrintStream#println(Z)V*
-
-%3java.io.PrintStream*
-
-%4boolean2
-println(Z)¯
-¬
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java1 1(
-%6java.io.PrintStream"__id*
-""íê
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java1 1(+	
-%7int"%it.fgm.teamup.model.Progetto#getId()I**
-(
-progettoit.fgm.teamup.model.Progetto2getId()éæ
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java1 1(,
-
-%8void"java.io.PrintStream#println(I)V*
-
-%6java.io.PrintStream*
-	
-%7int2
-println(I)ÔÑ
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java4" 4(0(
-%9"it.fgm.teamup.model.Partecipazione""it.fgm.teamup.model.Partecipazioneç
-ä
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java4 4(2
-%10",it.fgm.teamup.model.Partecipazione#<init>()V**
-(
-%9"it.fgm.teamup.model.Partecipazioneä
-á
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java4 4(3*
-part"it.fgm.teamup.model.Partecipazione"__id**
-(
-%9"it.fgm.teamup.model.Partecipazione°
-­
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java5 5(
-%11java.io.PrintStream"__id*
-""š—
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java5 5(5
-%12java.util.List">it.fgm.teamup.model.Utente#getPartecipazione()Ljava/util/List;*&
-$
-utenteit.fgm.teamup.model.Utente2getPartecipazione()™–
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java5 5(6
-%13void"0java.io.PrintStream#println(Ljava/lang/Object;)V*
-
-%11java.io.PrintStream*
-
-%12java.util.List2println(Ljava/lang/Object;)"±
-€
-vC:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/serviceimpl/PartecipazioneServiceImpl.java9 9(,
-*
-part"it.fgm.teamup.model.Partecipazione:$
-utenteit.fgm.teamup.model.Utente:(
-progettoit.fgm.teamup.model.Progetto:4
-partecipazione"it.fgm.teamup.model.PartecipazioneB75
-3it.fgm.teamup.serviceimpl.PartecipazioneServiceImpl
+%it.fgm.teamup.model.Attivita#getId()Ji
+_C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Attivita.java+ +("1*ã
+1i
+_C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Attivita.java+! +(#"s
+i
+_C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Attivita.java+ +($
+""B 
+it.fgm.teamup.model.Attivita

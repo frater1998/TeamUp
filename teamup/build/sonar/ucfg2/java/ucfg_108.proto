@@ -1,17 +1,156 @@
 
-:it.fgm.teamup.model.Utente#getPassword()Ljava/lang/String;g
-]C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Utente.javaj j("1*≠
-1g
-]C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Utente.javak k(∏
-µ
-g
-]C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Utente.javak k(
-%0java.lang.String"__id*,**
-it.fgm.teamup.model.Utente"
-
-password"É
-g
-]C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/model/Utente.javak k(
+∆it.fgm.teamup.controllers.GestoreAmministratoreController#loginadmin(Lit/fgm/teamup/model/Admin;Lorg/springframework/ui/ModelMap;Ljava/util/Locale;Ljavax/servlet/http/HttpSession;)Ljava/lang/String;Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java; ;("startingBlock*∂
+2Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaC C(ê
+ç
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaC C(
+%9"template!admin*=";
+9it.fgm.teamup.controllers.GestoreAmministratoreController*-
++
+modelMaporg.springframework.ui.ModelMap"î
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaC C(	
+admin*‚
+3Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaB B(À
+»
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaB B(2
+%8java.lang.Object"__mapGet*
+
+%jsp_context*	
+admin*
+2
+1*◊
+startingBlockÜ
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java; =(˛
+˚
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java: :(
+%11"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*$
+"
+adminit.fgm.teamup.model.AdminÅ
+˛
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java; ;(5
+%12"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute*$
+"
+adminit.fgm.teamup.model.Admin–
+Õ
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java;< ;(A"
+adminit.fgm.teamup.model.Admin"__annotation*
+
+%11*
+
+%12ˆ
+Û
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java: :(
+%13"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*
+
+localejava.util.Localeø
+º
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java<$ <(*
+localejava.util.Locale"__annotation*
+
+%13Ö
+Ç
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java: :(
+%14"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*+
+)
+sessionjavax.servlet.http.HttpSessionŒ
+À
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java<8 <(?)
+sessionjavax.servlet.http.HttpSession"__annotation*
+
+%14À»
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java;C ;(U+
+modelMaporg.springframework.ui.ModelMap"java.lang.Object*
+5*º
+4Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA3 A(8îë
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA3 A(F
+%5java.lang.String"9it.fgm.teamup.model.Admin#getPassword()Ljava/lang/String;*$
+"
+adminit.fgm.teamup.model.Admin2getPassword()Ú
+Ô
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaAO A(R
+%6java.lang.String"__id*F*D;
+9it.fgm.teamup.controllers.GestoreAmministratoreController"
+pwdôñ
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA3 A(T
+%7boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
-%0java.lang.StringB
-it.fgm.teamup.model.Utente
+%5java.lang.String*
+
+%6java.lang.String2equals(Ljava/lang/Object;)*
+3
+1*Ú
+
+5Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java? ?(#ŒÀ
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java? ?(!"
+%0it.fgm.teamup.model.Sessione"it.fgm.teamup.model.Sessione‡
+›
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.java? ?(#
+%1"&it.fgm.teamup.model.Sessione#<init>()V*$
+"
+%0it.fgm.teamup.model.Sessioneîë
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA A(
+%2java.lang.String"9it.fgm.teamup.model.Admin#getUsername()Ljava/lang/String;*$
+"
+adminit.fgm.teamup.model.Admin2getUsername()Ù
+Ò
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA( A(-
+%3java.lang.String"__id*H*F;
+9it.fgm.teamup.controllers.GestoreAmministratoreController"
+emailôñ
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaA A(/
+%4boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%2java.lang.String*
+
+%3java.lang.String2equals(Ljava/lang/Object;)*
+4
+1*¡
+1Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaE E(ñ
+ì
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaE E(
+%10"template!loginadmin*=";
+9it.fgm.teamup.controllers.GestoreAmministratoreController*-
++
+modelMaporg.springframework.ui.ModelMap"ô
+Ü
+|C:/Users/teren/Desktop/teamup_new/TeamUp/teamup/src/main/java/it/fgm/teamup/controllers/GestoreAmministratoreController.javaE E( 
+
+loginadmin:"
+adminit.fgm.teamup.model.Admin:+
+modelMaporg.springframework.ui.ModelMap:
+localejava.util.Locale:)
+sessionjavax.servlet.http.HttpSessionB=;
+9it.fgm.teamup.controllers.GestoreAmministratoreController

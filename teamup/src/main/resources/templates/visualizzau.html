@@ -1,0 +1,86 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<div th:fragment="visualizzap">
+    <div class="container">
+        <div>
+
+            <div>
+                <div>
+                    <h2>Utenti:</h2>
+                    <table border="1">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cognome</th>
+                            <th>Email</th>
+                           
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="utente : ${utente}">
+                            <td>
+                                <a th:text="${utente.nome}" th:href="@{/profilo/{id}(id=${utente.id})}"></a>
+                            </td>
+                            <td th:text="${utente.cognome}"></td>
+                            <td th:text="${utente.email}"></td>
+
+                            <td>
+                                <a  th:href="@{/deleteU/{id}(id=${utente.id})}">
+                        <span class="icon" >
+                            <i class="fas fa-minus-circle"></i>
+                        </span>
+
+                                </a>
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                    <div class="container">
+                        <div>
+
+                            <div>
+                                <div>
+                                    <h2>Progetti:</h2>
+                                    <table border="1">
+                                        <thead>
+                                        <tr>
+                                            <th>Titolo</th>
+                                            <th>Categoria</th>
+                                            <th>Descrizione</th>
+
+                                            <th>Delete</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr th:each="progetto : ${progetto}">
+                                            <td>
+                                                <a th:text="${progetto.titolo}" th:href="@{/singoloprog/{id}(id=${progetto.id})}"></a>
+                                            </td>
+                                            <td th:text="${progetto.categoria}"></td>
+                                            <td th:text="${progetto.descrizione}"></td>
+
+                                            <td>
+                                                <a  th:href="@{/deletep/{id}(id=${progetto.id})}">
+                        <span class="icon" >
+                            <i class="fas fa-minus-circle"></i>
+                        </span>
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+                    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
